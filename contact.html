@@ -16,11 +16,91 @@ title: Contact
             </p>
         </div>
 
-        <div class="max-w-4xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-12">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-3 gap-12">
+                
+                <!-- Formulaire de contact -->
+                <div class="lg:col-span-1">
+                    <h2 class="text-3xl font-bold text-poilu-roy mb-6">Écrivez-nous</h2>
+                    
+                    <div class="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
+                        <form action="https://formspree.io/f/xgvevrde" method="POST" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-poilu-roy mb-2">
+                                    Votre nom *
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    required
+                                    class="w-full px-4 py-3 border border-poilu-turquoise/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-poilu-turquoise focus:border-transparent transition-all duration-200"
+                                    placeholder="Votre nom complet"
+                                >
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-poilu-roy mb-2">
+                                    Votre email *
+                                </label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required
+                                    class="w-full px-4 py-3 border border-poilu-turquoise/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-poilu-turquoise focus:border-transparent transition-all duration-200"
+                                    placeholder="votre@email.com"
+                                >
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-poilu-roy mb-2">
+                                    Sujet
+                                </label>
+                                <select 
+                                    id="subject" 
+                                    name="subject"
+                                    class="w-full px-4 py-3 border border-poilu-turquoise/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-poilu-turquoise focus:border-transparent transition-all duration-200"
+                                >
+                                    <option value="">Choisissez un sujet</option>
+                                    <option value="Collaboration">Proposition de collaboration</option>
+                                    <option value="Partenariat">Partenariat marque/refuge</option>
+                                    <option value="Question">Question sur nos animaux</option>
+                                    <option value="Conseil">Demande de conseil</option>
+                                    <option value="Compliment">Compliment ❤️</option>
+                                    <option value="Autre">Autre</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-poilu-roy mb-2">
+                                    Votre message *
+                                </label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    rows="5" 
+                                    required
+                                    class="w-full px-4 py-3 border border-poilu-turquoise/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-poilu-turquoise focus:border-transparent transition-all duration-200 resize-none"
+                                    placeholder="Écrivez votre message ici... Parlez-nous de vos animaux, posez vos questions ou proposez une collaboration !"
+                                ></textarea>
+                            </div>
+                            
+                            <button 
+                                type="submit"
+                                class="w-full bg-gradient-to-r from-poilu-turquoise to-poilu-soleil text-white px-6 py-4 rounded-xl font-bold hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2"
+                            >
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                </svg>
+                                <span>Envoyer le message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
                 
                 <!-- Réseaux sociaux principaux -->
-                <div class="space-y-8">
+                <div class="lg:col-span-1 space-y-8">
                     <h2 class="text-3xl font-bold text-poilu-roy mb-6">Suivez-nous</h2>
                     
                     <!-- TikTok -->
@@ -77,6 +157,8 @@ title: Contact
 
                 <!-- Informations de contact -->
                 <div class="space-y-8">
+                                    <!-- Section "Parlons Ensemble" -->
+                <div class="lg:col-span-1">
                     <h2 class="text-3xl font-bold text-poilu-roy mb-6">Parlons Ensemble</h2>
                     
                     <div class="bg-gradient-to-br from-poilu-soleil/15 to-poilu-turquoise/15 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">

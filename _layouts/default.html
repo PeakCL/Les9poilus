@@ -24,6 +24,55 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicon/apple-icon-180x180.png' | relative_url }}">
     <link rel="icon" type="image/png" sizes="192x192" href="{{ '/assets/favicon/android-icon-192x192.png' | relative_url }}">
     <link rel="manifest" href="{{ '/assets/favicon/manifest.json' | relative_url }}">
+    
+    <!-- CSS personnalisé pour le formulaire -->
+    <style>
+        .form-success {
+            background: linear-gradient(135deg, #48CAE4, #F4D03F);
+            color: white;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .form-input:focus {
+            box-shadow: 0 0 0 3px rgba(72, 202, 228, 0.1);
+        }
+        
+        /* Optimisation de l'image principale */
+        .hero-image-container {
+            position: relative;
+        }
+        
+        .hero-image-container img {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        /* Responsive pour l'image principale */
+        @media (max-width: 768px) {
+            .hero-image-container img {
+                max-height: 400px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-image-container img {
+                max-height: 300px !important;
+            }
+        }
+        
+        /* Animation du badge */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(3deg); }
+            50% { transform: translateY(-10px) rotate(3deg); }
+        }
+        
+        .floating-badge {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
 </head>
 <body class="bg-poilu-creme font-body antialiased">
     <!-- Header -->
