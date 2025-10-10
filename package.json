@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/PeakCL/Les9poilus#readme",
   "devDependencies": {
-    "tailwindcss": "^4.1.14"
+    "tailwindcss": "3.4.14"
   }
 }
