@@ -17,7 +17,7 @@ pagination:
     {% if paginator.posts.size > 0 %}
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {% for post in paginator.posts %}
-                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <article class="bg-gradient-to-br from-poilu-soleil/10 to-poilu-turquoise/15 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                     {% if post.image %}
                         <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="w-full h-48 object-cover">
                     {% endif %}
@@ -72,7 +72,7 @@ pagination:
                 <div class="flex space-x-2">
                     {% if paginator.previous_page %}
                         <a href="{{ paginator.previous_page_path | relative_url }}" 
-                           class="px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                           class="px-4 py-2 bg-gradient-to-r from-poilu-soleil/15 to-poilu-turquoise/10 backdrop-blur-sm border border-poilu-turquoise/30 rounded-lg hover:from-poilu-soleil/25 hover:to-poilu-turquoise/20 transition-colors">
                             Précédent
                         </a>
                     {% endif %}
@@ -82,7 +82,7 @@ pagination:
                             <span class="px-4 py-2 bg-blue-600 text-white rounded-lg">{{ page }}</span>
                         {% else %}
                             <a href="{% if page == 1 %}{{ '/blog/' | relative_url }}{% else %}{{ paginator.page_trail[page].path | relative_url }}{% endif %}"
-                               class="px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                               class="px-4 py-2 bg-gradient-to-r from-poilu-soleil/15 to-poilu-turquoise/10 backdrop-blur-sm border border-poilu-turquoise/30 rounded-lg hover:from-poilu-soleil/25 hover:to-poilu-turquoise/20 transition-colors">
                                 {{ page }}
                             </a>
                         {% endif %}
@@ -90,7 +90,7 @@ pagination:
                     
                     {% if paginator.next_page %}
                         <a href="{{ paginator.next_page_path | relative_url }}" 
-                           class="px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                           class="px-4 py-2 bg-gradient-to-r from-poilu-soleil/15 to-poilu-turquoise/10 backdrop-blur-sm border border-poilu-turquoise/30 rounded-lg hover:from-poilu-soleil/25 hover:to-poilu-turquoise/20 transition-colors">
                             Suivant
                         </a>
                     {% endif %}
