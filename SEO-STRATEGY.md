@@ -2,40 +2,62 @@
 
 ## Stratégie SEO mise en place
 
-### 🎯 **Objectifs**
+### 🎯 **Objectifs CORRIGÉS**
 - Toucher tous les amoureux des animaux
 - Ciblage géographique : Savoie (sans être trop précis)
-- Améliorer la visibilité pour les recherches liées aux refuges et adoptions
+- Partager l'expérience d'une famille passionnée vivant avec des animaux
+- ⚠️ **IMPORTANT** : Nous ne sommes PAS un refuge, juste une famille avec des animaux
 
-### 🔍 **Mots-clés ciblés**
+### 🔍 **Mots-clés ciblés CORRIGÉS**
 
 #### **Mots-clés principaux**
-- refuge animaux Savoie
-- adoption chien chat Savoie
-- sanctuaire animal
+- famille avec animaux Savoie
+- quotidien avec chiens chats chevaux
+- vie avec animaux
 - amoureux des animaux
-- sauvetage animaux
+- famille passionnée animaux
 
 #### **Mots-clés secondaires**
-- refuge familial
-- animaux rescapés
 - bien-être animal
-- famille d'accueil animaux
-- protection animale Rhône-Alpes
+- conseils animaux de compagnie
+- histoires animaux
+- quotidien animaux
+- famille et animaux Rhône-Alpes
 
 #### **Mots-clés longue traîne**
-- "refuge familial pour animaux en Savoie"
-- "adoption responsable chiens chats Savoie"
-- "histoires touchantes animaux sauvés"
+- "famille vivant avec 9 animaux en Savoie"
+- "quotidien authentique avec animaux"
+- "histoires touchantes famille et animaux"
 
 ### 📋 **Optimisations techniques réalisées**
 
 #### **Structure des URLs**
-- `/` - Page d'accueil optimisée
-- `/nos-animaux/` - Galerie des compagnons
+- `/` - Page d'accueil famille passionnée
+- `/nos-animaux/` - Présentation de nos 9 compagnons  
 - `/nos-anges/` - Page mémorial
-- `/contact/` - Contact et adoption
-- `/refuge-savoie/` - Page SEO local dédiée
+- `/contact/` - Contact et échanges
+- `/notre-histoire/` - Histoire de notre famille
+
+#### **Contenu corrigé**
+- Suppression de toutes références "refuge" ou "adoption"
+- Focus sur "famille passionnée"
+- Mise en avant du "quotidien authentique"
+- Emphasis sur le "partage d'expériences"
+
+### 🌍 **SEO Local Savoie (Corrigé)**
+
+#### **Positionnement**
+- Famille passionnée vivant en Savoie
+- Partage d'expériences avec animaux
+- Conseils basés sur notre vécu
+- Histoires authentiques du quotidien
+
+### 📊 **Mots-clés à cibler désormais**
+- "famille avec animaux Savoie" 🎯
+- "quotidien avec chiens chats" 🎯  
+- "vie avec animaux Rhône-Alpes" 🎯
+- "histoires famille et animaux" 🎯
+- "conseils bien-être animal vécu" 🎯
 
 #### **Meta descriptions enrichies**
 - Descriptions uniques pour chaque page

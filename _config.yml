@@ -1,7 +1,7 @@
 # Site settings
-title: "La Communauté des 9 Poilus - Refuge et Sanctuaire Animaux Savoie"
-description: "Découvrez notre refuge familial en Savoie avec 9 compagnons rescapés : chiens, chats, chevaux et âne. Histoires touchantes, conseils bien-être animal et quotidien authentique d'amoureux des animaux."
-tagline: "Un refuge familial au cœur de la Savoie pour tous les amoureux des animaux"
+title: "La Communauté des 9 Poilus - Famille Passionnée d'Animaux en Savoie"
+description: "Découvrez le quotidien authentique d'une famille passionnée vivant avec 9 compagnons en Savoie : chiens, chats, chevaux et âne. Histoires touchantes, conseils bien-être animal et partage d'expériences avec nos amis à quatre pattes."
+tagline: "Une famille passionnée qui partage son amour des animaux au cœur de la Savoie"
 url: "https://peakcl.github.io" # the base hostname & protocol for your site
 baseurl: "/Les9poilus" # the subpath of your site
 
@@ -12,15 +12,15 @@ timezone: Europe/Paris
 # Author info
 author:
   name: "La Communauté des 9 Poilus"
-  bio: "Famille d'accueil et refuge pour animaux en Savoie - Partage d'expériences authentiques avec nos 9 compagnons rescapés"
+  bio: "Famille passionnée d'animaux en Savoie - Partage du quotidien authentique avec nos 9 compagnons à quatre pattes"
   location: "Savoie, France"
   
 # Logo and images for SEO
 logo: "/assets/images/logo-9-poilus.png"
 image: "/assets/images/og-image.jpg"
 
-# SEO Meta - Mots-clés ciblés amoureux des animaux
-keywords: "refuge animaux, sanctuaire animal Savoie, adoption chien chat, bien-être animal, amoureux des animaux, sauvetage animaux, famille d'accueil, animaux de compagnie, protection animale Rhône-Alpes"
+# SEO Meta - Mots-clés ciblés famille et animaux
+keywords: "famille avec animaux, vie avec chiens chats chevaux, quotidien animaux Savoie, amoureux des animaux, bien-être animal, conseils animaux de compagnie, histoires animaux, famille passionnée animaux Rhône-Alpes"
 
 # SEO Meta
 google_site_verification: "" # À ajouter plus tard
