@@ -1,29 +1,30 @@
 {
-  "name": "les-9-poilus",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build-css": "npx tailwindcss -i ./src/input.css -o ./assets/css/output.css --watch",
-    "build": "npx tailwindcss -i ./src/input.css -o ./assets/css/output.css",
-    "dev": "npm run build && bundle exec jekyll serve --livereload",
-    "build-site": "npm run build && bundle exec jekyll build",
-    "serve": "bundle exec jekyll serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PeakCL/Les9poilus.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/PeakCL/Les9poilus/issues"
-  },
-  "homepage": "https://github.com/PeakCL/Les9poilus#readme",
-      "dependencies": {
+    "name": "La Communauté des 9 Poilus",
+    "version": "1.0.0",
+    "description": "développement et intégration web sur-mesure",
+    "main": "tailwind.config.js",
+    "scripts": {
+        "build:tailwind": "npx tailwindcss -i ./src/input.css -o ./assets/css/output.css --minify",
+        "watch:tailwind": "npx tailwindcss -i ./src/input.css -o ./assets/css//output.css --watch",
+        "jekyll:serve": "bundle exec jekyll serve",
+        "jekyll:build": "bundle exec jekyll build",
+        "start": "npm-run-all --parallel watch:tailwind jekyll:serve",
+        "prebuild": "npx update-browserslist-db@latest --update-db || true",
+        "build": "npm run build:tailwind && npm run jekyll:build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Kimakito/La Communauté des 9 Poilus.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/Kimakito/La Communauté des 9 Poilus/issues"
+    },
+    "homepage": "https://github.com/Kimakito/La Communauté des 9 Poilus#readme",
+    "dependencies": {
         "browserslist": "^4.25.0",
         "dotenv": "^16.5.0",
         "electron-to-chromium": "^1.5.167",

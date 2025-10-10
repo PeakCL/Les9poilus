@@ -5,21 +5,21 @@ Ce dossier contient les photos de chacun de nos 9 compagnons, organisées par no
 ## Structure attendue des fichiers :
 
 ### 🐕 **Chien**
-- `mako.jpg` - Mako, le patron de la famille
+- `mako.webp` - Mako, le patron de la famille
 
 ### 🐱 **Chats Mâles**
-- `hawaii.jpg` - Hawaï, zen et affectueux
-- `mowgli.jpg` - Mowgli, aventurier et curieux
+- `hawaii.webp` - Hawaï, zen et affectueux
+- `mowgli.webp` - Mowgli, aventurier et curieux
 
 ### 🐱 **Chats Femelles**
-- `phuket.jpg` - Phuket, libre et indépendante
-- `nyx.jpg` - Nyx, élégante et protectrice
-- `tethys.jpg` - Téthys, gracieuse et mystérieuse
-- `yellow.jpg` - Yellow, joyeuse et lumineuse
+- `phuket.webp` - Phuket, libre et indépendante
+- `nyx.webp` - Nyx, élégante et protectrice
+- `tethys.webp` - Téthys, gracieuse et mystérieuse
+- `yellow.webp` - Yellow, joyeuse et lumineuse
 
 ### 🐎 **Équidés**
-- `goodvisor.jpg` - GoodVisor du Gelon (dit "Good"), le cheval noble
-- `comme-dhabitude.jpg` - Comme d'habitude, la jument paisible
+- `goodvisor.webp` - GoodVisor du Gelon (dit "Good"), le cheval noble
+- `comme-dhabitude.webp` - Comme d'habitude, la jument paisible
 
 ## Spécifications techniques :
 

@@ -1,113 +1,19 @@
-# Site settings
-title: "La Communauté des 9 Poilus - Famille Passionnée d'Animaux en Savoie"
-description: "Découvrez le quotidien authentique d'une famille passionnée vivant avec 9 compagnons en Savoie : chiens, chats, chevaux et âne. Histoires touchantes, conseils bien-être animal et partage d'expériences avec nos amis à quatre pattes."
-tagline: "Une famille passionnée qui partage son amour des animaux au cœur de la Savoie"
-url: "https://peakcl.github.io" # the base hostname & protocol for your site
-baseurl: "/Les9poilus" # the subpath of your site
+# _config.yml
 
-# SEO optimizations
-lang: fr
-timezone: Europe/Paris
-
-# Author info
-author:
-  name: "La Communauté des 9 Poilus"
-  bio: "Famille passionnée d'animaux en Savoie - Partage du quotidien authentique avec nos 9 compagnons à quatre pattes"
-  location: "Savoie, France"
-  
-# Logo and images for SEO
-logo: "/assets/images/logo-9-poilus.png"
-image: "/assets/images/og-image.jpg"
-
-# SEO Meta - Mots-clés ciblés famille et animaux
-keywords: "famille avec animaux, vie avec chiens chats chevaux, quotidien animaux Savoie, amoureux des animaux, bien-être animal, conseils animaux de compagnie, histoires animaux, famille passionnée animaux Rhône-Alpes"
-
-# SEO Meta
-google_site_verification: "" # À ajouter plus tard
-twitter:
-  username: communaute_9_poilus
-  card: summary_large_image
-
-# Social media
-social:
-  tiktok: "communaute_9_poilus"
-  instagram: "la_communaute_des_9_poilus"
-
-# Build settings
+title: La Communauté des 9 Poilus
+author: La Communauté des 9 Poilus
+description: Développement web, création de sites web, applications web, identité visuelle, freelance
+url: "https://les9poilus.fr"
+baseurl: ""
 markdown: kramdown
-highlighter: rouge
-permalink: /:categories/:year/:month/:day/:title/
-
-# Collections
-collections:
-  posts:
-    output: true
-    permalink: /blog/:year/:month/:day/:title/
-
-# Plugins
+kramdown:
+  input: GFM
+  hard_wrap: false
+  parse_block_html: true
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-paginate-v2
 
-# Pagination configuration
-pagination:
-  enabled: true
-  per_page: 6
-  permalink: '/page/:num/'
-  title: ' - Page :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-
-# Exclude from processing
-exclude:
-  - node_modules/
-  - package.json
-  - package-lock.json
-  - Gemfile
-  - Gemfile.lock
-  - vendor/
-  - .bundle/
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - README.md
-  - src/
-  - tailwind.config.js
-
-# Include files
-include:
-  - _redirects
-
-# Sass configuration for TailwindCSS
-sass:
-  sass_dir: _sass
-  style: compressed
-
-# Default values
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      author: "Les 9 Poilus"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-
-# Site navigation
-navigation:
-  - title: "🏠 Accueil"
-    url: "/"
-  - title: "🐾 Nos 9 Compagnons"
-    url: "/nos-animaux/"
-  - title: "�️ Nos Anges Gardiens"
-    url: "/nos-anges/"
-  - title: "�📖 Nos aventures"
-    url: "/blog/"
-  - title: "💌 Contact"
-    url: "/contact/"
+locale: fr_FR.UTF-8
+timezone: Europe/Paris
