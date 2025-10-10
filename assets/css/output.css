@@ -446,6 +446,18 @@ video {
   display: none;
 }
 
+/* Scroll smooth pour les ancres */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Espacement pour les ancres avec header fixe */
+
+section[id] {
+  scroll-margin-top: 2rem;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -586,6 +598,94 @@ video {
   .container {
     max-width: 1536px;
   }
+}
+
+/* Formulaires */
+
+.form-success {
+  background: linear-gradient(135deg, #48CAE4, #F4D03F);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Optimisation de l'image principale */
+
+.hero-image-container {
+  position: relative;
+}
+
+.hero-image-container img {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animation du badge */
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(3deg);
+  }
+
+  50% {
+    transform: translateY(-10px) rotate(3deg);
+  }
+}
+
+.floating-badge {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Optimisation des images d'animaux */
+
+.animal-card {
+  transition: all 0.3s ease;
+}
+
+.animal-card:hover {
+  transform: translateY(-5px);
+}
+
+.animal-photo {
+  height: 280px;
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+  position: relative;
+  overflow: hidden;
+}
+
+.animal-photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.animal-photo:hover img {
+  transform: scale(1.05);
+}
+
+.animal-badge {
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.animal-badge:hover {
+  transform: scale(1.05);
+}
+
+/* Animation pour les liens avec flèches */
+
+.arrow-link svg {
+  transition: transform 0.3s ease;
+}
+
+.arrow-link:hover svg {
+  transform: translateX(4px);
 }
 
 .visible {
@@ -2330,7 +2430,29 @@ body {
 
 /* Classes CSS personnalisées pour les 9 poilus */
 
-/* Styles additionnels pour le site des 9 poilus */
+/* CSS personnalisé récupéré du layout */
+
+/* Media queries responsives */
+
+@media (max-width: 768px) {
+  .hero-image-container img {
+    max-height: 400px !important;
+  }
+
+  .animal-photo {
+    height: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image-container img {
+    max-height: 300px !important;
+  }
+
+  .animal-photo {
+    height: 200px;
+  }
+}
 
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
