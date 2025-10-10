@@ -87,7 +87,7 @@ navigation:
   - title: "🏠 Accueil"
     url: "/"
   - title: "🐾 Nos 9 Compagnons"
-    url: "/nos-animaux.html"
+    url: "/nos-animaux/"
   - title: "📖 Nos aventures"
     url: "/blog/"
   - title: "💌 Contact"
