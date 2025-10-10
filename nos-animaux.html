@@ -11,80 +11,148 @@ title: Nos 9 Compagnons
             <h1 class="text-4xl md:text-6xl font-heading font-bold text-poilu-roy mb-6">
                 Nos 9 Compagnons
             </h1>
-            <p class="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto">
+            <p class="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto mb-8">
                 Découvrez les personnalités uniques de notre grande famille à quatre pattes
             </p>
+            
+            <!-- Navigation par espèces -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <a href="#chiens" class="bg-gradient-to-r from-poilu-soleil/20 to-amber-100/30 text-poilu-roy px-6 py-3 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 inline-flex items-center">
+                    <span class="text-2xl mr-2">🐕</span>
+                    Nos Chiens
+                </a>
+                <a href="#chats" class="bg-gradient-to-r from-poilu-turquoise/20 to-cyan-100/30 text-poilu-roy px-6 py-3 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 inline-flex items-center">
+                    <span class="text-2xl mr-2">🐱</span>
+                    Nos Chats
+                </a>
+                <a href="#equides" class="bg-gradient-to-r from-poilu-roy/20 to-indigo-100/30 text-poilu-roy px-6 py-3 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 inline-flex items-center">
+                    <span class="text-2xl mr-2">🐎</span>
+                    Nos Équidés
+                </a>
+            </div>
         </div>
 
-        <!-- Grid des animaux -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <!-- Section Chiens -->
+        <section id="chiens" class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-poilu-roy mb-4">
+                    <span class="text-4xl mr-3">🐕</span>
+                    Nos Fidèles Compagnons Canins
+                </h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                    Loyaux, protecteurs et toujours prêts pour l'aventure
+                </p>
+            </div>
             
-            <!-- GoodVisor du Gelon -->
-            <div class="bg-gradient-to-br from-poilu-soleil/20 to-amber-100/30 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-500">
-                <div class="h-48 bg-gradient-to-br from-amber-400 to-orange-500"></div>
-                <div class="p-6">
-                    <h3 class="text-2xl font-bold text-poilu-roy mb-3">GoodVisor du Gelon</h3>
-                    <p class="text-gray-700 mb-4">
-                        Le sage de la troupe, toujours présent pour veiller sur ses compagnons.
-                    </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-poilu-soleil/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Protecteur</span>
-                        <span class="bg-poilu-turquoise/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Loyal</span>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
+            
+            <!-- Mako - Le Patron -->
+            <div class="animal-card bg-gradient-to-br from-poilu-roy/20 to-cyan-100/30 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden border-2 border-poilu-roy/50">
+                <div class="animal-photo">
+                    <!-- Zone photo pour Mako -->
+                    <img src="/assets/images/animaux/mako.JPG" 
+                         alt="Mako - Le patron de la famille" 
+                         loading="lazy"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <!-- Placeholder si pas de photo -->
+                    <div class="w-full h-full bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center" style="display: none;">
+                        <div class="text-center text-white">
+                            <span class="text-6xl mb-2 block">🐕</span>
+                            <p class="text-sm opacity-80">Photo à venir</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- Comme d'habitude -->
-            <div class="bg-gradient-to-br from-poilu-turquoise/20 to-emerald-100/30 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-500">
-                <div class="h-48 bg-gradient-to-br from-green-400 to-emerald-500"></div>
-                <div class="p-6">
-                    <h3 class="text-2xl font-bold text-poilu-roy mb-3">Comme d'habitude</h3>
-                    <p class="text-gray-700 mb-4">
-                        Prévisible et rassurant, il apporte la stabilité dans notre quotidien.
-                    </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-poilu-soleil/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Régulier</span>
-                        <span class="bg-poilu-turquoise/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Paisible</span>
+                    <!-- Badge patron optimisé -->
+                    <div class="animal-badge absolute top-4 right-4 bg-gradient-to-r from-poilu-soleil to-yellow-300 text-poilu-roy px-4 py-2 rounded-full font-bold text-sm shadow-xl border-2 border-white/50">
+                        👑 LE PATRON
                     </div>
+                    <!-- Overlay hover -->
+                    <div class="absolute inset-0 bg-black/0 hover:bg-black/10 transition-all duration-300"></div>
                 </div>
-            </div>
-
-            <!-- Mako -->
-            <div class="bg-gradient-to-br from-poilu-roy/20 to-cyan-100/30 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-500">
-                <div class="h-48 bg-gradient-to-br from-blue-400 to-cyan-500"></div>
                 <div class="p-6">
                     <h3 class="text-2xl font-bold text-poilu-roy mb-3">Mako</h3>
-                    <p class="text-gray-700 mb-4">
-                        Rapide comme l'éclair, toujours prêt pour l'aventure et les jeux.
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Le vrai chef de la famille ! Rapide comme l'éclair, toujours prêt pour l'aventure et qui fait régner l'ordre dans la troupe.
                     </p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-poilu-soleil/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Énergique</span>
-                        <span class="bg-poilu-turquoise/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Joueur</span>
+                        <span class="bg-poilu-soleil/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Chef</span>
+                        <span class="bg-poilu-turquoise/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Énergique</span>
+                        <span class="bg-poilu-roy/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Protecteur</span>
                     </div>
                 </div>
             </div>
+            
+            </div>
+        </section>
 
-            <!-- Hawaï -->
-            <div class="bg-gradient-to-br from-pink-200/50 to-rose-100/30 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-500">
-                <div class="h-48 bg-gradient-to-br from-pink-400 to-rose-500"></div>
+        <!-- Section Chats -->
+        <section id="chats" class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-poilu-roy mb-4">
+                    <span class="text-4xl mr-3">🐱</span>
+                    Nos Maîtres Félins
+                </h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                    Grâce, mystère et indépendance incarnés - 6 personnalités uniques
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
+
+            <!-- Hawaï - Chat Mâle -->
+            <div class="animal-card bg-gradient-to-br from-pink-200/50 to-rose-100/30 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden">
+                <div class="animal-photo">
+                    <!-- Zone photo pour Hawaï -->
+                    <img src="/assets/images/animaux/hawai.JPG" 
+                         alt="Hawaï - Chat mâle zen et affectueux" 
+                         loading="lazy"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <!-- Placeholder si pas de photo -->
+                    <div class="w-full h-full bg-gradient-to-br from-pink-400 to-rose-500 flex items-center justify-center" style="display: none;">
+                        <div class="text-center text-white">
+                            <span class="text-6xl mb-2 block">🐱</span>
+                            <p class="text-sm opacity-80">Photo à venir</p>
+                        </div>
+                    </div>
+                    <!-- Badge mâle -->
+                    <div class="animal-badge absolute top-4 right-4 bg-blue-500/90 text-white px-3 py-2 rounded-full font-bold text-sm shadow-lg border border-white/30">
+                        ♂ Mâle
+                    </div>
+                </div>
                 <div class="p-6">
                     <h3 class="text-2xl font-bold text-poilu-roy mb-3">Hawaï</h3>
-                    <p class="text-gray-700 mb-4">
-                        Douce comme une brise tropicale, elle apporte sérénité et tendresse.
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Doux comme une brise tropicale, il apporte sérénité et tendresse à toute la famille.
                     </p>
                     <div class="flex flex-wrap gap-2">
                         <span class="bg-poilu-soleil/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Zen</span>
-                        <span class="bg-poilu-turquoise/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Affectueuse</span>
+                        <span class="bg-poilu-turquoise/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Affectueux</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Mowgli -->
-            <div class="bg-gradient-to-br from-poilu-soleil/25 to-amber-100/30 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-500">
-                <div class="h-48 bg-gradient-to-br from-yellow-400 to-amber-500"></div>
+            <!-- Mowgli - Chat Mâle -->
+            <div class="animal-card bg-gradient-to-br from-poilu-soleil/25 to-amber-100/30 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden">
+                <div class="animal-photo">
+                    <!-- Zone photo pour Mowgli -->
+                    <img src="/assets/images/animaux/mowgli.jpg" 
+                         alt="Mowgli - Chat mâle aventurier et curieux" 
+                         loading="lazy"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <!-- Placeholder si pas de photo -->
+                    <div class="w-full h-full bg-gradient-to-br from-yellow-400 to-amber-500 flex items-center justify-center" style="display: none;">
+                        <div class="text-center text-white">
+                            <span class="text-6xl mb-2 block">🐱</span>
+                            <p class="text-sm opacity-80">Photo à venir</p>
+                        </div>
+                    </div>
+                    <!-- Badge mâle -->
+                    <div class="animal-badge absolute top-4 right-4 bg-blue-500/90 text-white px-3 py-2 rounded-full font-bold text-sm shadow-lg border border-white/30">
+                        ♂ Mâle
+                    </div>
+                </div>
                 <div class="p-6">
                     <h3 class="text-2xl font-bold text-poilu-roy mb-3">Mowgli</h3>
-                    <p class="text-gray-700 mb-4">
+                    <p class="text-gray-700 mb-4 leading-relaxed">
                         L'aventurier né, curieux de tout et explorateur dans l'âme.
                     </p>
                     <div class="flex flex-wrap gap-2">
@@ -94,42 +162,61 @@ title: Nos 9 Compagnons
                 </div>
             </div>
 
-            <!-- Yellow -->
-            <div class="bg-gradient-to-br from-poilu-soleil/30 to-yellow-100/40 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-500">
-                <div class="h-48 bg-gradient-to-br from-poilu-soleil to-yellow-400"></div>
+            <!-- Phuket - Chat Femelle -->
+            <div class="animal-card bg-gradient-to-br from-poilu-turquoise/20 to-cyan-100/30 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden">
+                <div class="animal-photo">
+                    <!-- Zone photo pour Phuket -->
+                    <img src="/assets/images/animaux/phuket.jpg" 
+                         alt="Phuket - Chat femelle libre et indépendante" 
+                         loading="lazy"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <!-- Placeholder si pas de photo -->
+                    <div class="w-full h-full bg-gradient-to-br from-teal-400 to-cyan-500 flex items-center justify-center" style="display: none;">
+                        <div class="text-center text-white">
+                            <span class="text-6xl mb-2 block">🐱</span>
+                            <p class="text-sm opacity-80">Photo à venir</p>
+                        </div>
+                    </div>
+                    <!-- Badge femelle -->
+                    <div class="animal-badge absolute top-4 right-4 bg-pink-500/90 text-white px-3 py-2 rounded-full font-bold text-sm shadow-lg border border-white/30">
+                        ♀ Femelle
+                    </div>
+                </div>
                 <div class="p-6">
-                    <h3 class="text-2xl font-bold text-poilu-roy mb-3">Yellow</h3>
-                    <p class="text-gray-700 mb-4">
-                        Rayonnant de joie, il illumine chaque journée de sa bonne humeur.
+                    <h3 class="text-2xl font-bold text-poilu-roy mb-3">Phuket</h3>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Esprit libre et indépendant, elle nous rappelle l'importance de la liberté.
                     </p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-poilu-soleil/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Joyeux</span>
-                        <span class="bg-poilu-turquoise/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Lumineux</span>
+                        <span class="bg-poilu-soleil/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Libre</span>
+                        <span class="bg-poilu-turquoise/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Indépendante</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Téthys -->
-            <div class="bg-gradient-to-br from-poilu-turquoise/25 to-blue-100/30 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-500">
-                <div class="h-48 bg-gradient-to-br from-poilu-turquoise to-blue-400"></div>
-                <div class="p-6">
-                    <h3 class="text-2xl font-bold text-poilu-roy mb-3">Téthys</h3>
-                    <p class="text-gray-700 mb-4">
-                        Mystérieuse comme l'océan, elle nous fascine par sa grâce naturelle.
-                    </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-poilu-soleil/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Gracieuse</span>
-                        <span class="bg-poilu-turquoise/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Mystérieuse</span>
+            <!-- Nyx - Chat Femelle -->
+            <div class="animal-card bg-gradient-to-br from-poilu-roy/25 to-indigo-100/30 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden">
+                <div class="animal-photo">
+                    <!-- Zone photo pour Nyx -->
+                    <img src="/assets/images/animaux/nyx.png" 
+                         alt="Nyx - Chat femelle élégante et protectrice" 
+                         loading="lazy"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <!-- Placeholder si pas de photo -->
+                    <div class="w-full h-full bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center" style="display: none;">
+                        <div class="text-center text-white">
+                            <span class="text-6xl mb-2 block">🐱</span>
+                            <p class="text-sm opacity-80">Photo à venir</p>
+                        </div>
+                    </div>
+                    <!-- Badge femelle -->
+                    <div class="animal-badge absolute top-4 right-4 bg-pink-500/90 text-white px-3 py-2 rounded-full font-bold text-sm shadow-lg border border-white/30">
+                        ♀ Femelle
                     </div>
                 </div>
-            </div>
-
-            <!-- Nyx -->
-            <div class="bg-gradient-to-br from-poilu-roy/25 to-indigo-100/30 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-500">
-                <div class="h-48 bg-gradient-to-br from-purple-400 to-indigo-500"></div>
                 <div class="p-6">
                     <h3 class="text-2xl font-bold text-poilu-roy mb-3">Nyx</h3>
-                    <p class="text-gray-700 mb-4">
+                    <p class="text-gray-700 mb-4 leading-relaxed">
                         Élégante déesse de la nuit, elle veille sur notre sommeil paisible.
                     </p>
                     <div class="flex flex-wrap gap-2">
@@ -139,22 +226,156 @@ title: Nos 9 Compagnons
                 </div>
             </div>
 
-            <!-- Phuket -->
-            <div class="bg-gradient-to-br from-poilu-turquoise/20 to-cyan-100/30 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-500">
-                <div class="h-48 bg-gradient-to-br from-teal-400 to-cyan-500"></div>
+            <!-- Téthys - Chat Femelle -->
+            <div class="animal-card bg-gradient-to-br from-poilu-turquoise/25 to-blue-100/30 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden">
+                <div class="animal-photo">
+                    <!-- Zone photo pour Téthys -->
+                    <img src="/assets/images/animaux/tethys.png" 
+                         alt="Téthys - Chat femelle gracieuse et mystérieuse" 
+                         loading="lazy"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <!-- Placeholder si pas de photo -->
+                    <div class="w-full h-full bg-gradient-to-br from-poilu-turquoise to-blue-400 flex items-center justify-center" style="display: none;">
+                        <div class="text-center text-white">
+                            <span class="text-6xl mb-2 block">🐱</span>
+                            <p class="text-sm opacity-80">Photo à venir</p>
+                        </div>
+                    </div>
+                    <!-- Badge femelle -->
+                    <div class="animal-badge absolute top-4 right-4 bg-pink-500/90 text-white px-3 py-2 rounded-full font-bold text-sm shadow-lg border border-white/30">
+                        ♀ Femelle
+                    </div>
+                </div>
                 <div class="p-6">
-                    <h3 class="text-2xl font-bold text-poilu-roy mb-3">Phuket</h3>
-                    <p class="text-gray-700 mb-4">
-                        Esprit libre et indépendant, il nous rappelle l'importance de la liberté.
+                    <h3 class="text-2xl font-bold text-poilu-roy mb-3">Téthys</h3>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Mystérieuse comme l'océan, elle nous fascine par sa grâce naturelle.
                     </p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-poilu-soleil/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Libre</span>
-                        <span class="bg-poilu-turquoise/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Indépendant</span>
+                        <span class="bg-poilu-soleil/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Gracieuse</span>
+                        <span class="bg-poilu-turquoise/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Mystérieuse</span>
                     </div>
                 </div>
             </div>
 
-        </div>
+            <!-- Yellow - Chat Femelle -->
+            <div class="animal-card bg-gradient-to-br from-poilu-soleil/30 to-yellow-100/40 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden">
+                <div class="animal-photo">
+                    <!-- Zone photo pour Yellow -->
+                    <img src="/assets/images/animaux/yellow.jpg" 
+                         alt="Yellow - Chat femelle joyeuse et lumineuse" 
+                         loading="lazy"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <!-- Placeholder si pas de photo -->
+                    <div class="w-full h-full bg-gradient-to-br from-poilu-soleil to-yellow-400 flex items-center justify-center" style="display: none;">
+                        <div class="text-center text-white">
+                            <span class="text-6xl mb-2 block">🐱</span>
+                            <p class="text-sm opacity-80">Photo à venir</p>
+                        </div>
+                    </div>
+                    <!-- Badge femelle -->
+                    <div class="animal-badge absolute top-4 right-4 bg-pink-500/90 text-white px-3 py-2 rounded-full font-bold text-sm shadow-lg border border-white/30">
+                        ♀ Femelle
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-poilu-roy mb-3">Yellow</h3>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Rayonnante de joie, elle illumine chaque journée de sa bonne humeur.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-poilu-soleil/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Joyeuse</span>
+                        <span class="bg-poilu-turquoise/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Lumineuse</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </section>
+
+        <!-- Section Équidés -->
+        <section id="equides" class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-poilu-roy mb-4">
+                    <span class="text-4xl mr-3">🐎</span>
+                    Nos Nobles Équidés
+                </h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                    Force, liberté et sagesse de la nature - Notre duo équestre
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
+
+            <!-- GoodVisor du Gelon - Cheval -->
+            <div class="animal-card bg-gradient-to-br from-poilu-soleil/20 to-amber-100/30 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden">
+                <div class="animal-photo">
+                    <!-- Zone photo pour GoodVisor du Gelon -->
+                    <img src="/assets/images/animaux/good.png" 
+                         alt="GoodVisor du Gelon dit Good - Cheval noble et protecteur" 
+                         loading="lazy"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <!-- Placeholder si pas de photo -->
+                    <div class="w-full h-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center" style="display: none;">
+                        <div class="text-center text-white">
+                            <span class="text-6xl mb-2 block">🐎</span>
+                            <p class="text-sm opacity-80">Photo à venir</p>
+                        </div>
+                    </div>
+                    <!-- Badge cheval -->
+                    <div class="animal-badge absolute top-4 right-4 bg-blue-500/90 text-white px-3 py-2 rounded-full font-bold text-sm shadow-lg border border-white/30">
+                        🐎 Cheval
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-poilu-roy mb-3">GoodVisor du Gelon</h3>
+                    <p class="text-sm text-poilu-turquoise font-semibold mb-2">Dit "Good"</p>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Le sage de la troupe, toujours présent pour veiller sur ses compagnons avec noblesse et dignité.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-poilu-soleil/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Noble</span>
+                        <span class="bg-poilu-turquoise/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Protecteur</span>
+                        <span class="bg-poilu-roy/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Sage</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comme d'habitude - Jument -->
+            <div class="animal-card bg-gradient-to-br from-poilu-turquoise/20 to-emerald-100/30 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden">
+                <div class="animal-photo">
+                    <!-- Zone photo pour Comme d'habitude -->
+                    <img src="/assets/images/animaux/commed'hab.jpg" 
+                         alt="Comme d'habitude - Jument régulière et paisible" 
+                         loading="lazy"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <!-- Placeholder si pas de photo -->
+                    <div class="w-full h-full bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center" style="display: none;">
+                        <div class="text-center text-white">
+                            <span class="text-6xl mb-2 block">🦄</span>
+                            <p class="text-sm opacity-80">Photo à venir</p>
+                        </div>
+                    </div>
+                    <!-- Badge jument -->
+                    <div class="animal-badge absolute top-4 right-4 bg-pink-500/90 text-white px-3 py-2 rounded-full font-bold text-sm shadow-lg border border-white/30">
+                        🦄 Jument
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-poilu-roy mb-3">Comme d'habitude</h3>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Prévisible et rassurante, elle apporte la stabilité dans notre quotidien avec sa douceur féminine.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-poilu-soleil/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Régulière</span>
+                        <span class="bg-poilu-turquoise/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Paisible</span>
+                        <span class="bg-poilu-roy/20 text-poilu-roy px-3 py-1 rounded-full text-sm">Douce</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </section>
 
         <!-- Section communauté -->
         <div class="mt-20 text-center">

@@ -72,6 +72,75 @@
         .floating-badge {
             animation: float 3s ease-in-out infinite;
         }
+        
+        /* Optimisation des images d'animaux */
+        .animal-card {
+            transition: all 0.3s ease;
+        }
+        
+        .animal-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .animal-photo {
+            height: 280px;
+            background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .animal-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.5s ease;
+        }
+        
+        .animal-photo:hover img {
+            transform: scale(1.05);
+        }
+        
+        .animal-badge {
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+        
+        .animal-badge:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Responsive pour les photos d'animaux */
+        @media (max-width: 768px) {
+            .animal-photo {
+                height: 240px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .animal-photo {
+                height: 200px;
+            }
+        }
+        
+        /* Scroll smooth pour les ancres */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Espacement pour les ancres avec header fixe */
+        section[id] {
+            scroll-margin-top: 2rem;
+        }
+        
+        /* Animation pour les liens avec flèches */
+        .arrow-link svg {
+            transition: transform 0.3s ease;
+        }
+        
+        .arrow-link:hover svg {
+            transform: translateX(4px);
+        }
     </style>
 </head>
 <body class="bg-poilu-creme font-body antialiased">

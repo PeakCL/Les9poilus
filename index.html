@@ -105,46 +105,87 @@ description: "Bienvenue sur le site officiel des 9 Poilus"
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-gradient-to-br from-white to-poilu-creme p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-poilu-soleil border-opacity-30 group hover:border-opacity-60">
+            <a href="{{ '/nos-animaux/#chiens' | relative_url }}" class="bg-gradient-to-br from-white to-poilu-creme p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-poilu-soleil border-opacity-30 group hover:border-opacity-60 transform hover:scale-105">
                 <div class="w-16 h-16 bg-gradient-to-br from-poilu-soleil to-poilu-turquoise rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
                     <span class="text-3xl">🐕</span>
                 </div>
-                <h3 class="text-xl font-heading font-semibold mb-4 text-poilu-roy text-center">Nos Chiens</h3>
+                <h3 class="text-xl font-heading font-semibold mb-4 text-poilu-roy text-center">Notre Chien</h3>
                 <p class="text-poilu-gris font-body text-center leading-relaxed">
-                    Compagnons fidèles et source inépuisable de joie, 
-                    ils nous apprennent chaque jour la simplicité du bonheur.
+                    Mako, le véritable patron de la famille ! Fidèle compagnon et source inépuisable de joie, 
+                    il fait régner l'ordre dans la troupe.
                 </p>
                 <div class="text-center mt-6">
-                    <span class="text-2xl">🦮 🐕‍🦺 🐶</span>
+                    <span class="text-2xl">👑 🐕 �</span>
                 </div>
-            </div>
+                <div class="text-center mt-4">
+                    <span class="inline-flex items-center text-poilu-roy font-semibold group-hover:text-poilu-turquoise transition-colors duration-300">
+                        Découvrir Mako
+                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </div>
+            </a>
             
-            <div class="bg-gradient-to-br from-white to-poilu-creme p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-poilu-turquoise border-opacity-30 group hover:border-opacity-60">
+            <a href="{{ '/nos-animaux/#chats' | relative_url }}" class="bg-gradient-to-br from-white to-poilu-creme p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-poilu-turquoise border-opacity-30 group hover:border-opacity-60 transform hover:scale-105">
                 <div class="w-16 h-16 bg-gradient-to-br from-poilu-turquoise to-poilu-roy rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
                     <span class="text-3xl">🐱</span>
                 </div>
-                <h3 class="text-xl font-heading font-semibold mb-4 text-poilu-roy text-center">Nos Chats</h3>
+                <h3 class="text-xl font-heading font-semibold mb-4 text-poilu-roy text-center">Nos 6 Chats</h3>
                 <p class="text-poilu-gris font-body text-center leading-relaxed">
-                    Maîtres de l'art de vivre, ils nous enseignent la zen attitude 
-                    et l'importance des câlins au bon moment.
+                    Maîtres de l'art de vivre, ils nous enseignent la zen attitude ! 
+                    2 mâles et 4 femelles aux personnalités uniques.
                 </p>
                 <div class="text-center mt-6">
                     <span class="text-2xl">😸 😺 🙀</span>
                 </div>
-            </div>
+                <div class="text-center mt-4">
+                    <span class="inline-flex items-center text-poilu-roy font-semibold group-hover:text-poilu-turquoise transition-colors duration-300">
+                        Découvrir nos chats
+                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </div>
+            </a>
             
-            <div class="bg-gradient-to-br from-white to-poilu-creme p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-poilu-roy border-opacity-30 group hover:border-opacity-60">
+            <a href="{{ '/nos-animaux/#equides' | relative_url }}" class="bg-gradient-to-br from-white to-poilu-creme p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-poilu-roy border-opacity-30 group hover:border-opacity-60 transform hover:scale-105">
                 <div class="w-16 h-16 bg-gradient-to-br from-poilu-roy to-poilu-soleil rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
                     <span class="text-3xl">🐎</span>
                 </div>
                 <h3 class="text-xl font-heading font-semibold mb-4 text-poilu-roy text-center">Nos Équidés</h3>
                 <p class="text-poilu-gris font-body text-center leading-relaxed">
-                    Chevaux et âne qui nous connectent à la nature 
+                    Good le cheval et Comme d'habitude la jument, qui nous connectent à la nature 
                     et nous rappellent la beauté des relations authentiques.
                 </p>
                 <div class="text-center mt-6">
-                    <span class="text-2xl">🐴 🦄 🫏</span>
+                    <span class="text-2xl">� 🦄 ✨</span>
                 </div>
+                <div class="text-center mt-4">
+                    <span class="inline-flex items-center text-poilu-roy font-semibold group-hover:text-poilu-turquoise transition-colors duration-300">
+                        Découvrir nos équidés
+                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Lien vers nos anges gardiens -->
+        <div class="text-center mt-16">
+            <div class="max-w-2xl mx-auto">
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Notre famille compte aussi <strong>4 anges gardiens</strong> qui veillent sur nous depuis les étoiles...
+                </p>
+                <a href="{{ '/nos-anges/' | relative_url }}" 
+                   class="inline-flex items-center bg-gradient-to-r from-purple-100 to-blue-100 text-purple-700 px-6 py-3 rounded-2xl font-semibold hover:shadow-lg transition-all duration-300 border border-purple-200 hover:border-purple-300">
+                    <span class="text-lg mr-2">🕊️</span>
+                    Se souvenir de nos anges gardiens
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>
             </div>
         </div>
     </div>
