@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "npx tailwindcss -i ./src/input.css -o ./assets/css/tailwind.css --watch",
-    "build": "npx tailwindcss -i ./src/input.css -o ./assets/css/tailwind.css",
+    "build-css": "npx tailwindcss -i ./src/input.css -o ./assets/css/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./assets/css/output.css",
     "dev": "npm run build && bundle exec jekyll serve --livereload",
     "build-site": "npm run build && bundle exec jekyll build",
     "serve": "bundle exec jekyll serve",
