@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-10-10T09:36:32+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Les 9 Poilus</title><subtitle>La vraie vie d&apos;une famille entourée de ses animaux - Entre rires, émotions et apprentissages</subtitle><author><name>Les 9 Poilus</name></author><entry><title type="html">Quand Luna découvre la neige ❄️</title><link href="http://localhost:4000/blog/2025/10/10/luna-neige/" rel="alternate" type="text/html" title="Quand Luna découvre la neige ❄️" /><published>2025-10-10T00:00:00+02:00</published><updated>2025-10-10T00:00:00+02:00</updated><id>http://localhost:4000/blog/2025/10/10/luna-neige</id><content type="html" xml:base="http://localhost:4000/blog/2025/10/10/luna-neige/"><![CDATA[<p>Ce matin, Luna a eu droit à sa première vraie rencontre avec la neige. Et je peux vous dire que c’était… mémorable ! 😂</p>
+
+<h2 id="la-découverte">La découverte</h2>
+
+<p>Imaginez une boule de poils golden retriever de 2 ans, habituée à ses sorties matinales dans le jardin, qui ouvre la porte et se retrouve face à un monde tout blanc. Sa réaction ? Un bond en arrière digne des plus grands acrobates !</p>
+
+<blockquote>
+  <p>“Mais qu’est-ce que c’est que cette poudre magique qui tombe du ciel ?” - Luna, probablement</p>
+</blockquote>
+
+<h2 id="les-premiers-pas">Les premiers pas</h2>
+
+<p>Après quelques minutes d’observation prudente depuis le seuil de la porte, Luna a fini par poser une patte. Puis une autre. Et là… <strong>MIRACLE !</strong> Elle s’est mise à bondir comme un cabri, attrapant les flocons au vol avec une joie communicative.</p>
+
+<h3 id="ce-que-jai-appris-aujourdhui-">Ce que j’ai appris aujourd’hui :</h3>
+
+<ol>
+  <li><strong>Chaque première fois est magique</strong> - même pour nos animaux</li>
+  <li><strong>La curiosité finit toujours par l’emporter</strong> sur la prudence</li>
+  <li><strong>Un simple moment peut devenir extraordinaire</strong> quand on le vit avec nos compagnons</li>
+</ol>
+
+<h2 id="le-moment-tendre">Le moment tendre</h2>
+
+<p>Le plus beau dans tout ça ? Quand Luna s’est finalement calmée et qu’elle s’est assise dans la neige, me regardant avec ces yeux qui semblent dire : <em>“Tu vois ça, humain ? C’est génial, on peut recommencer demain ?”</em></p>
+
+<p>Ces instants-là, c’est exactement ce qui rend notre vie avec nos 9 poilus si riche. Chaque jour apporte son lot de surprises, de rires et d’émotions.</p>
+
+<hr />
+
+<p><strong>Et vos animaux, comment réagissent-ils face aux nouveautés ? Racontez-nous vos plus belles découvertes dans les commentaires ! 🐾</strong></p>
+
+<p><em>Prochain épisode : Comment notre chat Félix a décidé que la neige, c’était définitivement pas pour lui… depuis le confort du radiateur ! 😸</em></p>]]></content><author><name>Les 9 Poilus</name></author><category term="chiens" /><category term="moments-drôles" /><category term="saisons" /><summary type="html"><![CDATA[L'histoire touchante et hilarante de notre chienne Luna face à ses premiers flocons]]></summary></entry><entry><title type="html">Bienvenue sur notre nouveau site</title><link href="http://localhost:4000/blog/2025/10/10/bienvenue/" rel="alternate" type="text/html" title="Bienvenue sur notre nouveau site" /><published>2025-10-10T00:00:00+02:00</published><updated>2025-10-10T00:00:00+02:00</updated><id>http://localhost:4000/blog/2025/10/10/bienvenue</id><content type="html" xml:base="http://localhost:4000/blog/2025/10/10/bienvenue/"><![CDATA[<p>Nous sommes ravis de vous présenter notre nouveau site web ! Ce site a été entièrement conçu avec les dernières technologies pour vous offrir une expérience utilisateur optimale.</p>
+
+<h2 id="technologies-utilisées">Technologies utilisées</h2>
+
+<p>Notre site utilise une stack moderne et performante :</p>
+
+<ul>
+  <li><strong>Jekyll</strong> : Générateur de sites statiques rapide et flexible</li>
+  <li><strong>TailwindCSS</strong> : Framework CSS utilitaire pour un design moderne</li>
+  <li><strong>Netlify</strong> : Hébergement et déploiement continu</li>
+</ul>
+
+<h2 id="fonctionnalités">Fonctionnalités</h2>
+
+<h3 id="design-responsive">Design responsive</h3>
+<p>Notre site s’adapte parfaitement à tous les écrans, du mobile au desktop.</p>
+
+<h3 id="performance-optimisée">Performance optimisée</h3>
+<p>Grâce à Jekyll et à l’hébergement sur Netlify, notre site se charge en un éclair.</p>
+
+<h3 id="seo-intégré">SEO intégré</h3>
+<p>Tous les éléments nécessaires au référencement sont intégrés nativement.</p>
+
+<h2 id="ce-qui-vous-attend">Ce qui vous attend</h2>
+
+<p>Dans les prochaines semaines, vous pourrez découvrir :</p>
+
+<ol>
+  <li>De nouveaux contenus réguliers</li>
+  <li>Des fonctionnalités interactives</li>
+  <li>Une meilleure expérience utilisateur</li>
+</ol>
+
+<p>N’hésitez pas à explorer le site et à nous faire part de vos retours !</p>
+
+<hr />
+
+<p><em>Merci de votre visite et à bientôt sur Les 9 Poilus !</em></p>]]></content><author><name>Les 9 Poilus</name></author><category term="actualités" /><category term="développement" /><summary type="html"><![CDATA[Découvrez notre nouveau site web construit avec Jekyll et TailwindCSS.]]></summary></entry></feed>

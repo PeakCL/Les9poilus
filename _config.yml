@@ -1,0 +1,89 @@
+# Site settings
+title: "Les 9 Poilus"
+description: "La vraie vie d'une famille entourée de ses animaux - Entre rires, émotions et apprentissages"
+tagline: "Partager le quotidien chaleureux de nos compagnons à quatre pattes"
+url: "" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site
+
+# Author info
+author:
+  name: "Les 9 Poilus"
+  bio: "Une famille passionnée qui partage son quotidien authentique avec chiens, chats, chevaux et âne"
+  location: "France"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:year/:month/:day/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate-v2
+
+# Pagination configuration
+pagination:
+  enabled: true
+  per_page: 6
+  permalink: '/page/:num/'
+  title: ' - Page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
+# Exclude from processing
+exclude:
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - README.md
+  - src/
+  - tailwind.config.js
+
+# Include files
+include:
+  - _redirects
+
+# Sass configuration for TailwindCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Default values
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Les 9 Poilus"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Site navigation
+navigation:
+  - title: "🏠 Accueil"
+    url: "/"
+  - title: "🐾 Notre histoire"
+    url: "/about/"
+  - title: "📖 Nos aventures"
+    url: "/blog/"
+  - title: "💌 Contact"
+    url: "/contact/"

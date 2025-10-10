@@ -1,0 +1,67 @@
+<header class="bg-white shadow-warm border-b-2 border-poilu-ocre">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20">
+            <div class="flex items-center">
+                <a href="{{ '/' | relative_url }}" class="flex items-center space-x-3">
+                    <!-- Logo/Icône des 9 Poilus -->
+                    <div class="w-12 h-12 bg-gradient-to-br from-poilu-terre to-poilu-prairie rounded-full flex items-center justify-center">
+                        <span class="text-white text-xl font-bold">🐾</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-heading font-bold text-poilu-terre">{{ site.title }}</h1>
+                        <p class="text-sm font-script text-poilu-gris -mt-1">La vraie vie avec nos animaux</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                {% for nav in site.navigation %}
+                    <a href="{{ nav.url | relative_url }}" 
+                       class="text-poilu-gris hover:text-poilu-terre px-3 py-2 rounded-xl text-sm font-medium transition-all duration-200 hover:bg-poilu-ocre hover:bg-opacity-30
+                              {% if page.url == nav.url %}text-poilu-terre font-semibold bg-poilu-ocre bg-opacity-20{% endif %}">
+                        {{ nav.title }}
+                    </a>
+                {% endfor %}
+            </div>
+            
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+                <button type="button" 
+                        class="mobile-menu-button text-poilu-gris hover:text-poilu-terre focus:outline-none focus:text-poilu-terre"
+                        aria-label="Toggle menu">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-poilu-ocre">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                {% for nav in site.navigation %}
+                    <a href="{{ nav.url | relative_url }}" 
+                       class="text-poilu-gris hover:text-poilu-terre block px-3 py-2 rounded-xl text-base font-medium transition-all
+                              {% if page.url == nav.url %}text-poilu-terre font-semibold bg-poilu-ocre bg-opacity-20{% endif %}">
+                        {{ nav.title }}
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </nav>
+</header>
+
+<script>
+// Mobile menu toggle
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    
+    if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+});
+</script>

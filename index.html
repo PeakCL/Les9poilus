@@ -1,0 +1,139 @@
+---
+layout: default
+title: "Accueil"
+description: "Bienvenue sur le site officiel des 9 Poilus"
+---
+
+<!-- Hero Section -->
+<section class="bg-gradient-to-br from-poilu-terre via-poilu-prairie to-poilu-ciel text-white relative overflow-hidden">
+    <!-- Patterns décoratifs -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-20 left-10 text-6xl">🐕</div>
+        <div class="absolute top-40 right-20 text-4xl">🐱</div>
+        <div class="absolute bottom-20 left-1/4 text-5xl">🐎</div>
+        <div class="absolute bottom-40 right-1/3 text-3xl">🦮</div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10">
+        <div class="text-center">
+            <div class="mb-6">
+                <span class="inline-block text-6xl mb-4">🐾</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6">
+                Bienvenue chez 
+                <span class="font-script text-poilu-sunset">{{ site.title }}</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-blue-100 font-body">
+                La vraie vie d'une famille entourée de ses animaux<br>
+                <span class="font-script text-poilu-rose">Entre rires, émotions et apprentissages</span>
+            </p>
+            <div class="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center">
+                <a href="{{ '/about/' | relative_url }}" 
+                   class="bg-white text-poilu-terre px-8 py-4 rounded-2xl font-semibold hover:bg-poilu-creme transition duration-200 inline-block shadow-warm">
+                    🐾 Notre histoire
+                </a>
+                <a href="{{ '/blog/' | relative_url }}" 
+                   class="bg-poilu-sunset text-white px-8 py-4 rounded-2xl font-semibold hover:bg-poilu-rose transition duration-200 inline-block shadow-warm">
+                    📖 Nos aventures
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Content Section -->
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-heading font-bold text-poilu-terre mb-4">
+                Nos <span class="font-script text-poilu-sunset">9 Poilus</span>
+            </h2>
+            <p class="text-lg text-poilu-gris font-body max-w-2xl mx-auto">
+                Découvrez le quotidien chaleureux et authentique de notre petite tribu à quatre pattes, 
+                entre moments drôles, tendres et parfois chaotiques !
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-gradient-to-br from-poilu-creme to-white p-8 rounded-3xl shadow-warm hover:shadow-soft transition-all duration-300 border border-poilu-ocre border-opacity-30">
+                <div class="w-16 h-16 bg-gradient-to-br from-poilu-terre to-poilu-prairie rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                    <span class="text-3xl">🐕</span>
+                </div>
+                <h3 class="text-xl font-heading font-semibold mb-4 text-poilu-terre text-center">Nos Chiens</h3>
+                <p class="text-poilu-gris font-body text-center leading-relaxed">
+                    Compagnons fidèles et source inépuisable de joie, 
+                    ils nous apprennent chaque jour la simplicité du bonheur.
+                </p>
+            </div>
+            
+            <div class="bg-gradient-to-br from-poilu-creme to-white p-8 rounded-3xl shadow-warm hover:shadow-soft transition-all duration-300 border border-poilu-ocre border-opacity-30">
+                <div class="w-16 h-16 bg-gradient-to-br from-poilu-prairie to-poilu-ciel rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                    <span class="text-3xl">🐱</span>
+                </div>
+                <h3 class="text-xl font-heading font-semibold mb-4 text-poilu-terre text-center">Nos Chats</h3>
+                <p class="text-poilu-gris font-body text-center leading-relaxed">
+                    Maîtres de l'art de vivre, ils nous enseignent la zen attitude 
+                    et l'importance des câlins au bon moment.
+                </p>
+            </div>
+            
+            <div class="bg-gradient-to-br from-poilu-creme to-white p-8 rounded-3xl shadow-warm hover:shadow-soft transition-all duration-300 border border-poilu-ocre border-opacity-30">
+                <div class="w-16 h-16 bg-gradient-to-br from-poilu-ciel to-poilu-sunset rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                    <span class="text-3xl">🐎</span>
+                </div>
+                <h3 class="text-xl font-heading font-semibold mb-4 text-poilu-terre text-center">Nos Équidés</h3>
+                <p class="text-poilu-gris font-body text-center leading-relaxed">
+                    Chevaux et âne qui nous connectent à la nature 
+                    et nous rappellent la beauté des relations authentiques.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Recent Posts Section -->
+{% if site.posts.size > 0 %}
+<section class="py-20 bg-gradient-to-br from-poilu-creme to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-heading font-bold text-poilu-terre mb-4">
+                Nos dernières <span class="font-script text-poilu-sunset">aventures</span>
+            </h2>
+            <p class="text-lg text-poilu-gris font-body max-w-2xl mx-auto">
+                Plongez dans notre quotidien avec nos compagnons à quatre pattes
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {% for post in site.posts limit:3 %}
+                <article class="bg-white rounded-3xl shadow-warm overflow-hidden hover:shadow-soft transition-all duration-300 border border-poilu-ocre border-opacity-20">
+                    <div class="p-8">
+                        <div class="flex items-center text-sm text-poilu-gris mb-4">
+                            <span class="text-2xl mr-2">📅</span>
+                            <time class="font-body">{{ post.date | date: "%d %B %Y" }}</time>
+                        </div>
+                        <h3 class="text-xl font-heading font-semibold mt-2 mb-4">
+                            <a href="{{ post.url | relative_url }}" class="text-poilu-terre hover:text-poilu-prairie transition-colors">
+                                {{ post.title }}
+                            </a>
+                        </h3>
+                        {% if post.excerpt %}
+                            <p class="text-poilu-gris font-body mb-6 leading-relaxed">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+                        {% endif %}
+                        <a href="{{ post.url | relative_url }}" class="inline-flex items-center text-poilu-sunset hover:text-poilu-terre font-medium transition-colors">
+                            <span>Lire la suite</span>
+                            <span class="ml-2">🐾</span>
+                        </a>
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+        
+        <div class="text-center mt-12">
+            <a href="{{ '/blog/' | relative_url }}" class="bg-gradient-to-r from-poilu-prairie to-poilu-ciel text-white px-8 py-4 rounded-2xl hover:from-poilu-terre hover:to-poilu-prairie transition-all duration-300 inline-block font-heading font-semibold shadow-warm">
+                📚 Toutes nos histoires
+            </a>
+        </div>
+    </div>
+</section>
+{% endif %}
