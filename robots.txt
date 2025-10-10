@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://peakcl.github.io/Les9poilus/sitemap.xml
+
+# Optimisation pour les moteurs de recherche
+Crawl-delay: 1
+
+# Autoriser l'indexation de toutes les pages importantes
+Allow: /index.html
+Allow: /nos-animaux/
+Allow: /nos-anges/
+Allow: /contact/
+Allow: /assets/images/
+
+# Interdire les fichiers techniques
+Disallow: /assets/css/
+Disallow: /assets/js/
+Disallow: /_sass/
+Disallow: /_includes/
+Disallow: /_layouts/
+Disallow: /Gemfile
+Disallow: /package.json
