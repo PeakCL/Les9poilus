@@ -6,9 +6,6 @@
   RUBY_VERSION = "3.4"
   NODE_VERSION = "18"
 
-[[plugins]]
-  package = "netlify-plugin-ruby"
-
 # Redirect rules
 [[redirects]]
   from = "/admin/*"
