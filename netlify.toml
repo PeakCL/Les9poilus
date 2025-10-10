@@ -1,5 +1,5 @@
 [build]
-  command = "bundle install --jobs=4 --retry=3 --path vendor/bundle && npm ci --no-audit --prefer-offline && npx browserslist@latest --update-db || true && npm run build && bundle exec jekyll build --destination _site"
+  command = "bundle install --jobs=4 --retry=3 --path vendor/bundle && npm install && npx tailwindcss -i ./src/input.css -o ./assets/css/tailwind.css && bundle exec jekyll build"
   publish = "_site"
 
 [build.environment]
