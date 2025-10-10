@@ -11,23 +11,26 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Palette "Les 9 Poilus"
+        // Nouvelle palette "Les 9 Poilus" - TikTok Friendly
         'poilu': {
-          'terre': '#8B4513',      // Brun naturel principal
-          'ocre': '#D2B48C',       // Beige chaleureux
-          'prairie': '#7FB069',     // Vert nature
-          'ciel': '#87CEEB',       // Bleu tendre
-          'creme': '#FFF8DC',      // Fond doux
-          'sunset': '#FF8C69',     // Orange énergie
-          'rose': '#F4A460',       // Rose tendre
-          'gris': '#696969'        // Gris doux
+          'soleil': '#F4D03F',      // Jaune doux - joie et énergie
+          'turquoise': '#48CAE4',   // Turquoise - fraîcheur et modernité
+          'roy': '#1E3A8A',        // Bleu roi - confiance et contraste
+          'terre': '#8B4513',      // Brun - authenticité (gardé)
+          'ocre': '#F7DC6F',       // Ocre jaune - harmonie avec soleil
+          'prairie': '#52D1DC',     // Vert-turquoise - nature moderne
+          'ciel': '#AED6F1',       // Bleu ciel doux
+          'creme': '#FFFBF0',      // Crème légèrement dorée
+          'sunset': '#FF8C69',     // Orange (gardé pour CTA)
+          'gris': '#566573'        // Gris moderne
         },
-        // Aliases pour faciliter l'usage
-        'primary': '#8B4513',      // Terre
-        'secondary': '#7FB069',    // Prairie
-        'accent': '#FF8C69',       // Sunset
-        'warm': '#D2B48C',         // Ocre
-        'soft': '#87CEEB'          // Ciel
+        // Aliases optimisés pour TikTok/Instagram
+        'primary': '#F4D03F',      // Jaune Soleil
+        'secondary': '#48CAE4',    // Turquoise
+        'accent': '#1E3A8A',       // Bleu Roy
+        'warm': '#8B4513',         // Terre (authenticité)
+        'soft': '#AED6F1',         // Ciel doux
+        'energy': '#FF8C69'        // Sunset (CTA)
       },
       fontFamily: {
         'heading': ['Poppins', 'sans-serif'],      // Titres modernes et ronds

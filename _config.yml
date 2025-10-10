@@ -1,15 +1,20 @@
 # Site settings
-title: "Les 9 Poilus"
-description: "La vraie vie d'une famille entourée de ses animaux - Entre rires, émotions et apprentissages"
+title: "La Communauté des 9 Poilus"
+description: "GoodVisor du Gelon, Comme d'habitude, Mako, Hawaï, Mowgli, Yellow, Téthys, Nyx et Phuket - Entre rires, émotions et apprentissages"
 tagline: "Partager le quotidien chaleureux de nos compagnons à quatre pattes"
 url: "" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site
 
 # Author info
 author:
-  name: "Les 9 Poilus"
+  name: "La Communauté des 9 Poilus"
   bio: "Une famille passionnée qui partage son quotidien authentique avec chiens, chats, chevaux et âne"
   location: "France"
+
+# Social media
+social:
+  tiktok: "communaute_9_poilus"
+  instagram: "la_communaute_des_9_poilus"
 
 # Build settings
 markdown: kramdown
@@ -81,8 +86,8 @@ defaults:
 navigation:
   - title: "🏠 Accueil"
     url: "/"
-  - title: "🐾 Notre histoire"
-    url: "/about/"
+  - title: "🐾 Nos 9 Compagnons"
+    url: "/nos-animaux.html"
   - title: "📖 Nos aventures"
     url: "/blog/"
   - title: "💌 Contact"

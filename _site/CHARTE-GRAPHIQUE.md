@@ -18,23 +18,32 @@ Créer une communauté bienveillante où chaque humain comprend mieux ses animau
 
 ## 🎨 Palette de couleurs
 
-### Couleurs principales
-- **Terre Chaleureuse** : `#8B4513` - Couleur principale, évoque la nature et l'authenticité
-- **Ocre Doux** : `#D2B48C` - Chaleur et douceur, utilisée pour les backgrounds
-- **Vert Prairie** : `#7FB069` - Nature et bien-être, couleur secondaire
-- **Bleu Ciel** : `#87CEEB` - Sérénité et confiance
+### Couleurs principales - Version TikTok/Instagram Optimisée
+- **Jaune Soleil** : `#F4D03F` - Joie, énergie positive, parfait pour TikTok
+- **Turquoise Doux** : `#48CAE4` - Fraîcheur, modernité, jeunesse
+- **Bleu Roy** : `#1E3A8A` - Confiance, contraste élégant, professionnalisme
+- **Terre Chaleureuse** : `#8B4513` - Authenticité et ancrage (gardé)
 
-### Couleurs d'ambiance
-- **Crème** : `#FFF8DC` - Fond principal, douceur
-- **Orange Sunset** : `#FF8C69` - Énergie positive, call-to-action
-- **Rose Tendre** : `#F4A460` - Tendresse et émotion
-- **Gris Doux** : `#696969` - Textes secondaires
+### Couleurs d'harmonie
+- **Ocre Soleil** : `#F7DC6F` - Harmonie avec le jaune, backgrounds doux
+- **Prairie Turquoise** : `#52D1DC` - Vert-turquoise, nature moderne
+- **Ciel Doux** : `#AED6F1` - Bleu ciel apaisé
+- **Crème Dorée** : `#FFFBF0` - Fond principal, légèrement doré
 
-### Usage des couleurs
-- **Titres principaux** : Terre Chaleureuse (`#8B4513`)
-- **Liens et CTA** : Orange Sunset (`#FF8C69`)
-- **Textes** : Gris Doux (`#696969`)
-- **Backgrounds** : Crème (`#FFF8DC`) et Ocre Doux (`#D2B48C`)
+### Couleurs d'action (CTA)
+- **Orange Sunset** : `#FF8C69` - Énergie, call-to-action (gardé)
+- **Gris Moderne** : `#566573` - Textes secondaires
+
+### Usage spécifique réseaux sociaux
+- **TikTok** : Dégradés jaune-noir, animations, énergie
+- **Instagram** : Turquoise-violet, lifestyle, esthétique
+- **Contraste** : Bleu roy pour la lisibilité et le sérieux
+
+### Pourquoi ces couleurs ?
+✅ **Jaune** : Optimisme, joie, très performant sur TikTok  
+✅ **Turquoise** : Moderne, apaisant, parfait pour Instagram  
+✅ **Bleu Roy** : Confiance, contraste, sérieux quand nécessaire  
+✅ **Ensemble** : Palette unique qui se démarque des concurrents
 
 ---
 

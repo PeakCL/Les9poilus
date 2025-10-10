@@ -5,35 +5,56 @@ description: "Bienvenue sur le site officiel des 9 Poilus"
 ---
 
 <!-- Hero Section -->
-<section class="bg-gradient-to-br from-poilu-terre via-poilu-prairie to-poilu-ciel text-white relative overflow-hidden">
-    <!-- Patterns décoratifs -->
+<section class="bg-gradient-to-br from-poilu-roy via-poilu-turquoise to-poilu-soleil text-white relative overflow-hidden">
+    <!-- Patterns décoratifs animés -->
     <div class="absolute inset-0 opacity-10">
-        <div class="absolute top-20 left-10 text-6xl">🐕</div>
-        <div class="absolute top-40 right-20 text-4xl">🐱</div>
-        <div class="absolute bottom-20 left-1/4 text-5xl">🐎</div>
-        <div class="absolute bottom-40 right-1/3 text-3xl">🦮</div>
+        <div class="absolute top-20 left-10 text-6xl animate-bounce">🐕</div>
+        <div class="absolute top-40 right-20 text-4xl animate-pulse">🐱</div>
+        <div class="absolute bottom-20 left-1/4 text-5xl animate-bounce">🐎</div>
+        <div class="absolute bottom-40 right-1/3 text-3xl animate-pulse">🦮</div>
     </div>
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10">
         <div class="text-center">
             <div class="mb-6">
-                <span class="inline-block text-6xl mb-4">🐾</span>
+                <span class="inline-block text-6xl mb-4 animate-pulse">🐾</span>
             </div>
             <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6">
                 Bienvenue chez 
-                <span class="font-script text-poilu-sunset">{{ site.title }}</span>
+                <span class="font-script text-poilu-soleil drop-shadow-lg">{{ site.title }}</span>
             </h1>
             <p class="text-xl md:text-2xl mb-8 text-blue-100 font-body">
                 La vraie vie d'une famille entourée de ses animaux<br>
-                <span class="font-script text-poilu-rose">Entre rires, émotions et apprentissages</span>
+                <span class="font-script text-poilu-soleil">Entre rires, émotions et apprentissages</span>
             </p>
+            
+            <!-- CTA Focus TikTok/Instagram -->
+            <div class="space-y-6 md:space-y-0 md:space-x-6 md:flex md:justify-center mb-8">
+                <a href="https://www.tiktok.com/@communaute_9_poilus" target="_blank"
+                   class="bg-gradient-to-r from-poilu-soleil to-yellow-300 text-poilu-roy px-8 py-4 rounded-2xl font-bold hover:shadow-2xl transition-all duration-300 inline-flex items-center group transform hover:scale-105">
+                    <svg class="w-6 h-6 mr-3 group-hover:animate-spin" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                    </svg>
+                    Nos vidéos TikTok
+                </a>
+                
+                <a href="https://www.instagram.com/la_communaute_des_9_poilus" target="_blank"
+                   class="bg-gradient-to-r from-poilu-turquoise to-cyan-400 text-white px-8 py-4 rounded-2xl font-bold hover:shadow-2xl transition-all duration-300 inline-flex items-center group transform hover:scale-105">
+                    <svg class="w-6 h-6 mr-3 group-hover:animate-pulse" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                    Photos Instagram
+                </a>
+            </div>
+            
+            <!-- Navigation secondaire -->
             <div class="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center">
                 <a href="{{ '/about/' | relative_url }}" 
-                   class="bg-white text-poilu-terre px-8 py-4 rounded-2xl font-semibold hover:bg-poilu-creme transition duration-200 inline-block shadow-warm">
+                   class="bg-white bg-opacity-20 backdrop-blur-sm text-white px-6 py-3 rounded-xl font-semibold hover:bg-opacity-30 transition duration-200 inline-block border border-white border-opacity-30">
                     🐾 Notre histoire
                 </a>
                 <a href="{{ '/blog/' | relative_url }}" 
-                   class="bg-poilu-sunset text-white px-8 py-4 rounded-2xl font-semibold hover:bg-poilu-rose transition duration-200 inline-block shadow-warm">
+                   class="bg-white bg-opacity-20 backdrop-blur-sm text-white px-6 py-3 rounded-xl font-semibold hover:bg-opacity-30 transition duration-200 inline-block border border-white border-opacity-30">
                     📖 Nos aventures
                 </a>
             </div>
@@ -42,11 +63,11 @@ description: "Bienvenue sur le site officiel des 9 Poilus"
 </section>
 
 <!-- Content Section -->
-<section class="py-20 bg-white">
+<section class="py-20 bg-gradient-to-br from-poilu-creme to-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-            <h2 class="text-4xl font-heading font-bold text-poilu-terre mb-4">
-                Nos <span class="font-script text-poilu-sunset">9 Poilus</span>
+            <h2 class="text-4xl font-heading font-bold text-poilu-roy mb-4">
+                Nos <span class="font-script text-poilu-soleil drop-shadow-sm">9 Poilus</span>
             </h2>
             <p class="text-lg text-poilu-gris font-body max-w-2xl mx-auto">
                 Découvrez le quotidien chaleureux et authentique de notre petite tribu à quatre pattes, 
@@ -55,37 +76,46 @@ description: "Bienvenue sur le site officiel des 9 Poilus"
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-gradient-to-br from-poilu-creme to-white p-8 rounded-3xl shadow-warm hover:shadow-soft transition-all duration-300 border border-poilu-ocre border-opacity-30">
-                <div class="w-16 h-16 bg-gradient-to-br from-poilu-terre to-poilu-prairie rounded-2xl flex items-center justify-center mb-6 mx-auto">
+            <div class="bg-gradient-to-br from-white to-poilu-creme p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-poilu-soleil border-opacity-30 group hover:border-opacity-60">
+                <div class="w-16 h-16 bg-gradient-to-br from-poilu-soleil to-poilu-turquoise rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
                     <span class="text-3xl">🐕</span>
                 </div>
-                <h3 class="text-xl font-heading font-semibold mb-4 text-poilu-terre text-center">Nos Chiens</h3>
+                <h3 class="text-xl font-heading font-semibold mb-4 text-poilu-roy text-center">Nos Chiens</h3>
                 <p class="text-poilu-gris font-body text-center leading-relaxed">
                     Compagnons fidèles et source inépuisable de joie, 
                     ils nous apprennent chaque jour la simplicité du bonheur.
                 </p>
+                <div class="text-center mt-6">
+                    <span class="text-2xl">🦮 🐕‍🦺 🐶</span>
+                </div>
             </div>
             
-            <div class="bg-gradient-to-br from-poilu-creme to-white p-8 rounded-3xl shadow-warm hover:shadow-soft transition-all duration-300 border border-poilu-ocre border-opacity-30">
-                <div class="w-16 h-16 bg-gradient-to-br from-poilu-prairie to-poilu-ciel rounded-2xl flex items-center justify-center mb-6 mx-auto">
+            <div class="bg-gradient-to-br from-white to-poilu-creme p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-poilu-turquoise border-opacity-30 group hover:border-opacity-60">
+                <div class="w-16 h-16 bg-gradient-to-br from-poilu-turquoise to-poilu-roy rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
                     <span class="text-3xl">🐱</span>
                 </div>
-                <h3 class="text-xl font-heading font-semibold mb-4 text-poilu-terre text-center">Nos Chats</h3>
+                <h3 class="text-xl font-heading font-semibold mb-4 text-poilu-roy text-center">Nos Chats</h3>
                 <p class="text-poilu-gris font-body text-center leading-relaxed">
                     Maîtres de l'art de vivre, ils nous enseignent la zen attitude 
                     et l'importance des câlins au bon moment.
                 </p>
+                <div class="text-center mt-6">
+                    <span class="text-2xl">😸 😺 🙀</span>
+                </div>
             </div>
             
-            <div class="bg-gradient-to-br from-poilu-creme to-white p-8 rounded-3xl shadow-warm hover:shadow-soft transition-all duration-300 border border-poilu-ocre border-opacity-30">
-                <div class="w-16 h-16 bg-gradient-to-br from-poilu-ciel to-poilu-sunset rounded-2xl flex items-center justify-center mb-6 mx-auto">
+            <div class="bg-gradient-to-br from-white to-poilu-creme p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-poilu-roy border-opacity-30 group hover:border-opacity-60">
+                <div class="w-16 h-16 bg-gradient-to-br from-poilu-roy to-poilu-soleil rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
                     <span class="text-3xl">🐎</span>
                 </div>
-                <h3 class="text-xl font-heading font-semibold mb-4 text-poilu-terre text-center">Nos Équidés</h3>
+                <h3 class="text-xl font-heading font-semibold mb-4 text-poilu-roy text-center">Nos Équidés</h3>
                 <p class="text-poilu-gris font-body text-center leading-relaxed">
                     Chevaux et âne qui nous connectent à la nature 
                     et nous rappellent la beauté des relations authentiques.
                 </p>
+                <div class="text-center mt-6">
+                    <span class="text-2xl">🐴 🦄 🫏</span>
+                </div>
             </div>
         </div>
     </div>
@@ -96,8 +126,8 @@ description: "Bienvenue sur le site officiel des 9 Poilus"
 <section class="py-20 bg-gradient-to-br from-poilu-creme to-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-            <h2 class="text-4xl font-heading font-bold text-poilu-terre mb-4">
-                Nos dernières <span class="font-script text-poilu-sunset">aventures</span>
+            <h2 class="text-4xl font-heading font-bold text-poilu-roy mb-4">
+                Nos dernières <span class="font-script text-poilu-soleil drop-shadow-sm">aventures</span>
             </h2>
             <p class="text-lg text-poilu-gris font-body max-w-2xl mx-auto">
                 Plongez dans notre quotidien avec nos compagnons à quatre pattes
@@ -106,21 +136,21 @@ description: "Bienvenue sur le site officiel des 9 Poilus"
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {% for post in site.posts limit:3 %}
-                <article class="bg-white rounded-3xl shadow-warm overflow-hidden hover:shadow-soft transition-all duration-300 border border-poilu-ocre border-opacity-20">
+                <article class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border-2 border-poilu-turquoise border-opacity-20 hover:border-opacity-50">
                     <div class="p-8">
                         <div class="flex items-center text-sm text-poilu-gris mb-4">
                             <span class="text-2xl mr-2">📅</span>
                             <time class="font-body">{{ post.date | date: "%d %B %Y" }}</time>
                         </div>
                         <h3 class="text-xl font-heading font-semibold mt-2 mb-4">
-                            <a href="{{ post.url | relative_url }}" class="text-poilu-terre hover:text-poilu-prairie transition-colors">
+                            <a href="{{ post.url | relative_url }}" class="text-poilu-roy hover:text-poilu-turquoise transition-colors">
                                 {{ post.title }}
                             </a>
                         </h3>
                         {% if post.excerpt %}
                             <p class="text-poilu-gris font-body mb-6 leading-relaxed">{{ post.excerpt | strip_html | truncate: 120 }}</p>
                         {% endif %}
-                        <a href="{{ post.url | relative_url }}" class="inline-flex items-center text-poilu-sunset hover:text-poilu-terre font-medium transition-colors">
+                        <a href="{{ post.url | relative_url }}" class="inline-flex items-center text-poilu-soleil hover:text-poilu-turquoise font-medium transition-colors">
                             <span>Lire la suite</span>
                             <span class="ml-2">🐾</span>
                         </a>
@@ -130,10 +160,88 @@ description: "Bienvenue sur le site officiel des 9 Poilus"
         </div>
         
         <div class="text-center mt-12">
-            <a href="{{ '/blog/' | relative_url }}" class="bg-gradient-to-r from-poilu-prairie to-poilu-ciel text-white px-8 py-4 rounded-2xl hover:from-poilu-terre hover:to-poilu-prairie transition-all duration-300 inline-block font-heading font-semibold shadow-warm">
+            <a href="{{ '/blog/' | relative_url }}" class="bg-gradient-to-r from-poilu-turquoise to-poilu-roy text-white px-8 py-4 rounded-2xl hover:from-poilu-soleil hover:to-poilu-turquoise transition-all duration-300 inline-block font-heading font-semibold shadow-lg transform hover:scale-105">
                 📚 Toutes nos histoires
             </a>
         </div>
     </div>
 </section>
 {% endif %}
+
+<!-- Section Réseaux Sociaux - Focus TikTok/Instagram -->
+<section class="py-20 bg-gradient-to-r from-poilu-turquoise via-poilu-roy to-poilu-soleil">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="text-white mb-12">
+            <h2 class="text-4xl font-heading font-bold mb-4">
+                Suivez nos <span class="font-script">aventures quotidiennes</span> ! 
+            </h2>
+            <p class="text-xl opacity-90 max-w-3xl mx-auto">
+                Moments drôles, tendres et spontanés avec nos 9 poilus - 
+                En exclusivité sur nos réseaux ! 
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <!-- TikTok Card - Priorité -->
+            <div class="bg-white rounded-3xl p-8 shadow-2xl transform hover:scale-105 transition-all duration-300 border-4 border-yellow-300">
+                <div class="mb-6">
+                    <div class="w-20 h-20 bg-gradient-to-br from-black to-gray-800 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-heading font-bold text-poilu-roy mb-3">@communaute_9_poilus</h3>
+                    <p class="text-poilu-gris mb-6">
+                        🎬 <strong>Vidéos exclusives</strong> de nos animaux<br>
+                        😂 Moments drôles en temps réel<br>
+                        🐾 Behind the scenes de notre quotidien
+                    </p>
+                </div>
+                <a href="https://www.tiktok.com/@communaute_9_poilus" target="_blank" 
+                   class="bg-gradient-to-r from-black to-gray-800 text-white px-8 py-4 rounded-2xl font-bold hover:shadow-xl transition-all duration-300 inline-flex items-center group w-full justify-center">
+                    <span class="mr-3">🚀 Suivre sur TikTok</span>
+                    <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+            </div>
+            
+            <!-- Instagram Card -->
+            <div class="bg-white rounded-3xl p-8 shadow-2xl transform hover:scale-105 transition-all duration-300 border-4 border-poilu-turquoise">
+                <div class="mb-6">
+                    <div class="w-20 h-20 bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-heading font-bold text-poilu-roy mb-3">@la_communaute_des_9_poilus</h3>
+                    <p class="text-poilu-gris mb-6">
+                        📸 <strong>Photos lifestyle</strong> avec nos animaux<br>
+                        ✨ Stories quotidiennes authentiques<br>
+                        💝 Conseils et moments tendres
+                    </p>
+                </div>
+                <a href="https://www.instagram.com/la_communaute_des_9_poilus" target="_blank" 
+                   class="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-8 py-4 rounded-2xl font-bold hover:shadow-xl transition-all duration-300 inline-flex items-center group w-full justify-center">
+                    <span class="mr-3">� Suivre sur Instagram</span>
+                    <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Appel à l'action communauté -->
+        <div class="mt-12 text-white">
+            <p class="text-lg opacity-90 mb-6">
+                🌟 Rejoignez notre communauté bienveillante d'amoureux des animaux !
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 text-sm opacity-80">
+                <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">#Les9Poilus</span>
+                <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">#VieAvecAnimaux</span>
+                <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">#AmourAnimaux</span>
+                <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">#QuotidienPoilus</span>
+            </div>
+        </div>
+    </div>
+</section>

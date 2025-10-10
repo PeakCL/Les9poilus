@@ -1,178 +1,122 @@
-# 🐾 Les 9 Poilus - Site Web Officiel
+# La Communauté des 9 Poilus 🐾
 
-> La vraie vie d'une famille entourée de ses animaux - Entre rires, émotions et apprentissages
+Bienvenue sur le site web officiel de **La Communauté des 9 Poilus** ! Ce site présente l'univers authentique de nos 9 compagnons à quatre pattes et permet à notre communauté de nous suivre sur TikTok et Instagram.
 
-## 🎨 Identité visuelle
+## 🎯 Notre Vision
 
-Ce site utilise une charte graphique chaleureuse et authentique qui reflète l'univers bienveillant des animaux de compagnie. Consultez [`CHARTE-GRAPHIQUE.md`](./CHARTE-GRAPHIQUE.md) pour tous les détails.
+Partager le quotidien chaleureux et authentique de nos 9 compagnons :
+- **GoodVisor du Gelon** - Le protecteur sage
+- **Comme d'habitude** - La stabilité rassurante  
+- **Mako** - L'énergie pure
+- **Hawaï** - La douceur tropicale
+- **Mowgli** - L'aventurier né
+- **Yellow** - La joie rayonnante
+- **Téthys** - La grâce mystérieuse
+- **Nyx** - L'élégance nocturne
+- **Phuket** - L'esprit libre
 
-### Palette de couleurs
-- **Terre Chaleureuse** `#8B4513` - Couleur principale
-- **Ocre Doux** `#D2B48C` - Backgrounds chaleureux  
-- **Vert Prairie** `#7FB069` - Nature et bien-être
-- **Orange Sunset** `#FF8C69` - Call-to-action énergiques
+## 🌈 Identité Visuelle
 
-## 🚀 Installation et développement
+Notre charte graphique s'articule autour de couleurs chaleureuses qui reflètent l'authenticité de notre communauté :
+
+### Couleurs Principales
+- **Poilu Soleil** : `#F4D03F` - Chaleur et joie
+- **Poilu Turquoise** : `#48CAE4` - Fraîcheur et sérénité  
+- **Poilu Royal** : `#1E3A8A` - Confiance et stabilité
+- **Poilu Gris** : `#6B7280` - Élégance et sobriété
+
+### Optimisé pour les Réseaux Sociaux
+Le design privilégie **TikTok** et **Instagram** avec des éléments visuels adaptés :
+- Couleurs vives pour capturer l'attention
+- Design mobile-first
+- Boutons d'appel à l'action proéminents
+- Contenu visuel engageant
+
+## 🚀 Nos Réseaux Sociaux
+
+- **TikTok** : [@communaute_9_poilus](https://www.tiktok.com/@communaute_9_poilus)
+  - Vidéos courtes et amusantes
+  - Behind the scenes de notre quotidien
+  - Moments drôles avec nos animaux
+
+- **Instagram** : [@la_communaute_des_9_poilus](https://www.instagram.com/la_communaute_des_9_poilus)
+  - Photos lifestyle avec nos compagnons
+  - Stories quotidiennes authentiques
+  - Conseils et moments tendres
+
+## 🛠️ Technologies Utilisées
+
+### Stack Technique
+- **Jekyll 4.4.1** - Générateur de site statique
+- **TailwindCSS** - Framework CSS pour un design moderne
+- **Node.js** - Gestion des dépendances frontend
+- **Ruby 3.4+** - Backend Jekyll avec gems de compatibilité
+- **Netlify** - Hébergement et déploiement
+
+## 🎨 Développement
 
 ### Prérequis
-- **Node.js** (v18+)
-- **Ruby** (v3.1+) 
-- **Bundler** pour Jekyll
+- **Ruby 3.4+** installé
+- **Node.js 16+** installé
+- **Bundler** pour les gems Ruby
 
-### Installation initiale
-
+### Installation
 ```bash
-# 1. Cloner le repository
-git clone https://github.com/PeakCL/Les9poilus.git
-cd Les9poilus
+# 1. Cloner le projet
+cd "c:\Users\ikami\Desktop\Dev\Les 9 poilus"
 
-# 2. Installer les dépendances Node.js
-npm install
-
-# 3. Installer les gems Ruby
+# 2. Installer les dépendances Ruby
 bundle install
 
-# 4. Build initial
-npm run build-site
-```
+# 3. Installer les dépendances Node.js
+npm install
 
-### Commandes de développement
-
-```bash
-# Serveur de développement Jekyll + TailwindCSS
-npm run dev
-
-# Compilation CSS uniquement
+# 4. Compiler le CSS TailwindCSS
 npm run build
 
-# Build complet pour production
-npm run build-site
-
-# Serveur Jekyll seul
+# 5. Démarrer le serveur de développement
 bundle exec jekyll serve
 ```
 
-## 📁 Structure du projet
-
-```
-Les9poilus/
-├── _layouts/           # Templates Jekyll
-├── _includes/          # Composants réutilisables
-├── _posts/            # Articles de blog
-├── _sass/             # Fichiers Sass
-├── assets/            # CSS, images, favicon
-├── src/               # Sources TailwindCSS
-├── _config.yml        # Configuration Jekyll
-├── netlify.toml       # Configuration Netlify
-├── tailwind.config.js # Configuration TailwindCSS
-└── Gemfile           # Dépendances Ruby
-```
-
-## 🎨 Système de design
-
-### Classes TailwindCSS personnalisées
-
-```css
-/* Couleurs de la marque */
-.text-poilu-terre      /* #8B4513 - Textes principaux */
-.bg-poilu-creme        /* #FFF8DC - Backgrounds doux */
-.text-poilu-sunset     /* #FF8C69 - Call-to-action */
-
-/* Typographies */
-.font-heading          /* Poppins - Titres */
-.font-body            /* Inter - Corps de texte */
-.font-script          /* Dancing Script - Accents */
-
-/* Ombres personnalisées */
-.shadow-warm          /* Ombre chaleureuse */
-.shadow-soft          /* Ombre douce */
-```
-
-### Composants réutilisables
-
-- **Cards animaux** : Arrondies avec ombres douces
-- **Boutons CTA** : Dégradés avec hover effects
-- **Navigation** : Design chaleureux avec emojis
-- **Articles** : Layout blog optimisé pour la lecture
-
-## 📝 Création de contenu
-
-### Nouvel article de blog
-
+### Commandes Utiles
 ```bash
-# Créer un fichier dans _posts/
-touch _posts/2025-MM-DD-titre-article.md
+# Compilation CSS en mode watch
+npm run watch
+
+# Build de production
+npm run build
+
+# Serveur Jekyll avec rechargement automatique
+bundle exec jekyll serve --watch
+
+# Build Jekyll pour production
+bundle exec jekyll build
 ```
 
-Template d'article :
-```yaml
----
-layout: post
-title: "Titre avec emoji 🐾"
-date: 2025-MM-DD
-categories: [chiens, moments-drôles, éducation]
-author: "Les 9 Poilus"
-description: "Description engageante de l'article"
----
+## 📝 Gestion du Contenu
 
-Contenu markdown avec ton chaleureux et authentique...
-```
-
-### Guidelines éditoriales
-
-- ✅ **Ton bienveillant** et authentique
-- ✅ **Émojis** pour l'émotion (avec parcimonie)
-- ✅ **Histoires vraies** du quotidien
-- ✅ **Questions** pour engager la communauté
-- ❌ Éviter le ton commercial ou artificiel
+### Modifier les Réseaux Sociaux
+Les liens sont définis dans :
+- `_config.yml` → Section `social:`
+- `_includes/header.html` → Liens directs dans la navigation
+- `index.html` → Boutons d'appel à l'action
+- `contact.html` → Page dédiée aux réseaux
 
 ## 🚀 Déploiement
 
-### Netlify (automatique)
-Le site se déploie automatiquement sur chaque push via Netlify :
+### Netlify (Recommandé)
+Le site est configuré pour un déploiement automatique sur Netlify :
 
-- **Build command** : `npm run build && bundle exec jekyll build`
-- **Publish directory** : `_site`
-- **Branch** : `main`
+1. **Build Command** : `npm run build && bundle exec jekyll build`
+2. **Publish Directory** : `_site`
+3. **Node Version** : 18 (dans netlify.toml)
 
-### Build local de test
-```bash
-npm run build-site
-# Le site généré sera dans _site/
-```
+## 📞 Support
 
-## 🎯 SEO et Performance
-
-### Optimisations incluses
-- ✅ Jekyll SEO Tag
-- ✅ Sitemap automatique  
-- ✅ Feed RSS
-- ✅ Meta descriptions personnalisées
-- ✅ Structure HTML sémantique
-- ✅ Images optimisées
-
-### Performance
-- ✅ TailwindCSS optimisé (purge CSS)
-- ✅ Fonts Google préchargées
-- ✅ Lazy loading images
-- ✅ Compression Netlify
-
-## 🐾 Philosophie du projet
-
-Ce site reflète notre mission : **partager la vraie vie avec nos animaux** de manière authentique et bienveillante. Chaque élément de design et de contenu doit servir cette vision.
-
-### Valeurs core
-- **Authenticité** : Pas de filtre, la vraie vie
-- **Bienveillance** : Respect et amour des animaux  
-- **Partage** : Créer du lien émotionnel
-- **Simplicité** : Design accessible et chaleureux
+Pour toute question :
+- **TikTok** : [@communaute_9_poilus](https://www.tiktok.com/@communaute_9_poilus)
+- **Instagram** : [@la_communaute_des_9_poilus](https://www.instagram.com/la_communaute_des_9_poilus)
 
 ---
 
-## 📞 Contact
-
-Pour toute question sur le développement ou le contenu :
-- **Email** : contact@les9poilus.fr
-- **Repository** : [github.com/PeakCL/Les9poilus](https://github.com/PeakCL/Les9poilus)
-
-*Fait avec ❤️ pour nos compagnons à quatre pattes*
+*Fait avec 💝 pour la communauté des amoureux d'animaux par La Communauté des 9 Poilus*
