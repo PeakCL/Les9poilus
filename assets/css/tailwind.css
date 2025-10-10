@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -1056,32 +1056,32 @@ video {
 
 .border-gray-200 {
   --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .border-gray-700 {
   --tw-border-opacity: 1;
-  border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
 }
 
 .border-poilu-ocre {
   --tw-border-opacity: 1;
-  border-color: rgb(247 220 111 / var(--tw-border-opacity, 1));
+  border-color: rgb(247 220 111 / var(--tw-border-opacity));
 }
 
 .border-poilu-roy {
   --tw-border-opacity: 1;
-  border-color: rgb(30 58 138 / var(--tw-border-opacity, 1));
+  border-color: rgb(30 58 138 / var(--tw-border-opacity));
 }
 
 .border-poilu-soleil {
   --tw-border-opacity: 1;
-  border-color: rgb(244 208 63 / var(--tw-border-opacity, 1));
+  border-color: rgb(244 208 63 / var(--tw-border-opacity));
 }
 
 .border-poilu-turquoise {
   --tw-border-opacity: 1;
-  border-color: rgb(72 202 228 / var(--tw-border-opacity, 1));
+  border-color: rgb(72 202 228 / var(--tw-border-opacity));
 }
 
 .border-poilu-turquoise\/30 {
@@ -1090,12 +1090,12 @@ video {
 
 .border-white {
   --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .border-yellow-300 {
   --tw-border-opacity: 1;
-  border-color: rgb(253 224 71 / var(--tw-border-opacity, 1));
+  border-color: rgb(253 224 71 / var(--tw-border-opacity));
 }
 
 .border-opacity-30 {
@@ -1104,62 +1104,62 @@ video {
 
 .bg-amber-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(251 191 36 / var(--tw-bg-opacity, 1));
+  background-color: rgb(251 191 36 / var(--tw-bg-opacity));
 }
 
 .bg-black {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-blue-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
 }
 
 .bg-blue-50 {
   --tw-bg-opacity: 1;
-  background-color: rgb(239 246 255 / var(--tw-bg-opacity, 1));
+  background-color: rgb(239 246 255 / var(--tw-bg-opacity));
 }
 
 .bg-blue-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .bg-gray-50 {
   --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
 .bg-gray-900 {
   --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 .bg-green-50 {
   --tw-bg-opacity: 1;
-  background-color: rgb(240 253 244 / var(--tw-bg-opacity, 1));
+  background-color: rgb(240 253 244 / var(--tw-bg-opacity));
 }
 
 .bg-orange-50 {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 247 237 / var(--tw-bg-opacity, 1));
+  background-color: rgb(255 247 237 / var(--tw-bg-opacity));
 }
 
 .bg-poilu-creme {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 251 240 / var(--tw-bg-opacity, 1));
+  background-color: rgb(255 251 240 / var(--tw-bg-opacity));
 }
 
 .bg-poilu-ocre {
   --tw-bg-opacity: 1;
-  background-color: rgb(247 220 111 / var(--tw-bg-opacity, 1));
+  background-color: rgb(247 220 111 / var(--tw-bg-opacity));
 }
 
 .bg-poilu-soleil {
   --tw-bg-opacity: 1;
-  background-color: rgb(244 208 63 / var(--tw-bg-opacity, 1));
+  background-color: rgb(244 208 63 / var(--tw-bg-opacity));
 }
 
 .bg-poilu-soleil\/20 {
@@ -1168,7 +1168,7 @@ video {
 
 .bg-poilu-turquoise {
   --tw-bg-opacity: 1;
-  background-color: rgb(72 202 228 / var(--tw-bg-opacity, 1));
+  background-color: rgb(72 202 228 / var(--tw-bg-opacity));
 }
 
 .bg-poilu-turquoise\/20 {
@@ -1177,12 +1177,12 @@ video {
 
 .bg-purple-50 {
   --tw-bg-opacity: 1;
-  background-color: rgb(250 245 255 / var(--tw-bg-opacity, 1));
+  background-color: rgb(250 245 255 / var(--tw-bg-opacity));
 }
 
 .bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-white\/95 {
@@ -1729,112 +1729,112 @@ video {
 
 .text-blue-100 {
   --tw-text-opacity: 1;
-  color: rgb(219 234 254 / var(--tw-text-opacity, 1));
+  color: rgb(219 234 254 / var(--tw-text-opacity));
 }
 
 .text-blue-600 {
   --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity, 1));
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .text-blue-800 {
   --tw-text-opacity: 1;
-  color: rgb(30 64 175 / var(--tw-text-opacity, 1));
+  color: rgb(30 64 175 / var(--tw-text-opacity));
 }
 
 .text-blue-900 {
   --tw-text-opacity: 1;
-  color: rgb(30 58 138 / var(--tw-text-opacity, 1));
+  color: rgb(30 58 138 / var(--tw-text-opacity));
 }
 
 .text-gray-300 {
   --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .text-gray-400 {
   --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .text-gray-500 {
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .text-gray-600 {
   --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .text-gray-700 {
   --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .text-gray-800 {
   --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity, 1));
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .text-gray-900 {
   --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity, 1));
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .text-green-800 {
   --tw-text-opacity: 1;
-  color: rgb(22 101 52 / var(--tw-text-opacity, 1));
+  color: rgb(22 101 52 / var(--tw-text-opacity));
 }
 
 .text-green-900 {
   --tw-text-opacity: 1;
-  color: rgb(20 83 45 / var(--tw-text-opacity, 1));
+  color: rgb(20 83 45 / var(--tw-text-opacity));
 }
 
 .text-orange-800 {
   --tw-text-opacity: 1;
-  color: rgb(154 52 18 / var(--tw-text-opacity, 1));
+  color: rgb(154 52 18 / var(--tw-text-opacity));
 }
 
 .text-orange-900 {
   --tw-text-opacity: 1;
-  color: rgb(124 45 18 / var(--tw-text-opacity, 1));
+  color: rgb(124 45 18 / var(--tw-text-opacity));
 }
 
 .text-poilu-gris {
   --tw-text-opacity: 1;
-  color: rgb(86 101 115 / var(--tw-text-opacity, 1));
+  color: rgb(86 101 115 / var(--tw-text-opacity));
 }
 
 .text-poilu-roy {
   --tw-text-opacity: 1;
-  color: rgb(30 58 138 / var(--tw-text-opacity, 1));
+  color: rgb(30 58 138 / var(--tw-text-opacity));
 }
 
 .text-poilu-soleil {
   --tw-text-opacity: 1;
-  color: rgb(244 208 63 / var(--tw-text-opacity, 1));
+  color: rgb(244 208 63 / var(--tw-text-opacity));
 }
 
 .text-poilu-terre {
   --tw-text-opacity: 1;
-  color: rgb(139 69 19 / var(--tw-text-opacity, 1));
+  color: rgb(139 69 19 / var(--tw-text-opacity));
 }
 
 .text-purple-800 {
   --tw-text-opacity: 1;
-  color: rgb(107 33 168 / var(--tw-text-opacity, 1));
+  color: rgb(107 33 168 / var(--tw-text-opacity));
 }
 
 .text-purple-900 {
   --tw-text-opacity: 1;
-  color: rgb(88 28 135 / var(--tw-text-opacity, 1));
+  color: rgb(88 28 135 / var(--tw-text-opacity));
 }
 
 .text-white {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-white\/90 {
@@ -1961,17 +1961,17 @@ body {
 
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gray-800:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-poilu-soleil:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(244 208 63 / var(--tw-bg-opacity, 1));
+  background-color: rgb(244 208 63 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-opacity-20:hover {
@@ -2004,32 +2004,32 @@ body {
 
 .hover\:text-blue-600:hover {
   --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity, 1));
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .hover\:text-blue-800:hover {
   --tw-text-opacity: 1;
-  color: rgb(30 64 175 / var(--tw-text-opacity, 1));
+  color: rgb(30 64 175 / var(--tw-text-opacity));
 }
 
 .hover\:text-poilu-roy:hover {
   --tw-text-opacity: 1;
-  color: rgb(30 58 138 / var(--tw-text-opacity, 1));
+  color: rgb(30 58 138 / var(--tw-text-opacity));
 }
 
 .hover\:text-poilu-terre:hover {
   --tw-text-opacity: 1;
-  color: rgb(139 69 19 / var(--tw-text-opacity, 1));
+  color: rgb(139 69 19 / var(--tw-text-opacity));
 }
 
 .hover\:text-poilu-turquoise:hover {
   --tw-text-opacity: 1;
-  color: rgb(72 202 228 / var(--tw-text-opacity, 1));
+  color: rgb(72 202 228 / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-2xl:hover {
@@ -2052,7 +2052,7 @@ body {
 
 .focus\:text-poilu-terre:focus {
   --tw-text-opacity: 1;
-  color: rgb(139 69 19 / var(--tw-text-opacity, 1));
+  color: rgb(139 69 19 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {
@@ -2074,22 +2074,22 @@ body {
 
 .focus\:ring-gray-300:focus {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity, 1));
+  --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));
 }
 
 .focus\:ring-poilu-soleil:focus {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(244 208 63 / var(--tw-ring-opacity, 1));
+  --tw-ring-color: rgb(244 208 63 / var(--tw-ring-opacity));
 }
 
 .focus\:ring-poilu-turquoise:focus {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(72 202 228 / var(--tw-ring-opacity, 1));
+  --tw-ring-color: rgb(72 202 228 / var(--tw-ring-opacity));
 }
 
 .focus\:ring-purple-300:focus {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(216 180 254 / var(--tw-ring-opacity, 1));
+  --tw-ring-color: rgb(216 180 254 / var(--tw-ring-opacity));
 }
 
 .group:hover .group-hover\:translate-x-1 {
