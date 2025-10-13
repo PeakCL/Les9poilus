@@ -30,5 +30,7 @@ navigation:
     url: "/notre-histoire/"
   - title: "Blog"
     url: "/blog/"
+  - title: "Collaborations"
+    url: "/collaborations/"
   - title: "Contact"
     url: "/contact/"
