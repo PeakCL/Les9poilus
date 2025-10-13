@@ -18,6 +18,21 @@ body {
     .border-b-3 {
         border-bottom-width: 3px;
     }
+    
+    /* Police Cinzel Decorative pour les titres importants */
+    .font-cinzel {
+        font-family: 'Cinzel Decorative', cursive;
+    }
+    
+    .font-cinzel-bold {
+        font-family: 'Cinzel Decorative', cursive;
+        font-weight: 700;
+    }
+    
+    .font-cinzel-black {
+        font-family: 'Cinzel Decorative', cursive;
+        font-weight: 900;
+    }
 }
 
 /* CSS personnalisé récupéré du layout */
