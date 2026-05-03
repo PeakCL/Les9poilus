@@ -1,4 +1,4 @@
-import './App.css'
+import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -11,28 +11,15 @@ import NotreHistoire from "./pages/NotreHistoire";
 import Footer from "./components/Footer";
 
 function Home() {
-  return (
-    <>
-      <Hero />
-    </>
-  );
-}
-
-function Placeholder({ title }) {
-  return (
-    <main className="flex-1 flex flex-col items-center justify-center">
-      <h2 className="text-2xl font-heading text-poilu-roy mb-4">{title}</h2>
-      <p className="text-poilu-gris text-lg">Contenu à venir…</p>
-    </main>
-  );
+  return <Hero />;
 }
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-poilu-creme flex flex-col">
+      <div className="flex min-h-screen flex-col bg-poilu-creme">
         <Navbar />
-        <div className="flex-1 flex flex-col">
+        <main id="main-content" className="flex flex-1 flex-col">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/nos-animaux" element={<NosAnimaux />} />
@@ -40,11 +27,10 @@ function App() {
             <Route path="/collaborations" element={<Collaborations />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/collaborations" element={<Collaborations />} />
             <Route path="/nos-disparus" element={<NosDisparus />} />
             <Route path="/notre-histoire" element={<NotreHistoire />} />
           </Routes>
-        </div>
+        </main>
         <Footer />
       </div>
     </Router>

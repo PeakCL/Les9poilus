@@ -1,77 +1,97 @@
-import React from "react";
-
 export default function TolkienSection() {
+  const chats = [
+    { nom: "Hawaï" },
+    { nom: "Mowgli" },
+    { nom: "Phuket" },
+    { nom: "Yellow" },
+    { nom: "Nyx" },
+    { nom: "Téthys" },
+  ];
+
   return (
     <section
-      className="py-16 bg-gradient-to-br from-poilu-creme via-poilu-soleil to-poilu-turquoise relative overflow-hidden"
+      className="relative overflow-hidden bg-poilu-creme py-20 md:py-28"
       aria-labelledby="section-tolkien-title"
     >
-      {/* Parchemin décoratif en arrière-plan, décoratif donc aria-hidden */}
-      <div className="absolute inset-0 opacity-30 pointer-events-none select-none" aria-hidden="true">
-        <div className="absolute top-10 left-10 text-6xl rotate-12 drop-shadow-lg animate-pulse">🧙‍♂️</div>
-        <div className="absolute top-20 right-20 text-4xl -rotate-12 drop-shadow-lg animate-bounce">📜</div>
-        <div className="absolute bottom-10 left-1/4 text-5xl rotate-6 drop-shadow-lg animate-pulse">⚔️</div>
-        <div className="absolute bottom-20 right-1/3 text-3xl -rotate-6 drop-shadow-lg animate-bounce">🗡️</div>
+      <div className="pointer-events-none absolute inset-0 opacity-[0.35]" aria-hidden>
+        <div className="absolute left-[8%] top-16 text-5xl md:text-6xl">🧙‍♂️</div>
+        <div className="absolute right-[12%] top-24 text-4xl md:text-5xl">📜</div>
+        <div className="absolute bottom-20 left-[20%] text-4xl">⚔️</div>
       </div>
-      <div className="max-w-4xl mx-auto px-2 md:px-8">
-        <div className="rounded-3xl bg-gradient-to-br from-[#fffbe6] via-[#fff9e3] to-[#f7f7fa] shadow-lg border border-poilu-soleil/30 p-6 md:p-12 relative" style={{boxShadow:'0 4px 32px 0 rgba(255, 200, 80, 0.10)'}}>
-          {/* En-tête parchemin */}
-          <header className="flex flex-col items-center mb-4" tabIndex={-1} aria-labelledby="section-tolkien-title">
-            <span className="text-5xl md:text-6xl mb-2 select-none" role="img" aria-label="parchemin">📜</span>
-            <h2 id="section-tolkien-title" className="text-poilu-soleil text-2xl md:text-3xl font-script text-center mb-2 drop-shadow-sm">"Neuf compagnons... ainsi doit-il en être."</h2>
+
+      <div className="relative mx-auto max-w-3xl px-4 sm:px-6">
+        <div className="rounded-[2rem] border border-poilu-roy/10 bg-white/80 p-8 shadow-card backdrop-blur-md md:p-12">
+          <header className="mb-8 text-center">
+            <span className="text-5xl md:text-6xl" aria-hidden>
+              📜
+            </span>
+            <h2
+              id="section-tolkien-title"
+              className="mt-4 font-script text-3xl text-poilu-terre md:text-4xl"
+            >
+              &ldquo;Neuf compagnons… ainsi doit-il en être.&rdquo;
+            </h2>
           </header>
-          {/* Bloc texte Tolkien */}
-          <div className="bg-white/80 rounded-2xl px-4 py-4 md:py-6 md:px-8 shadow-inner border border-poilu-soleil/20 mb-8 max-w-3xl mx-auto">
-            <p className="text-poilu-roy text-lg md:text-xl font-body text-center leading-relaxed">
-              Tout comme <span className="font-bold">la Communauté de l'Anneau</span> de Tolkien réunissait 9 membres unis par une quête commune, <span className="font-bold">notre Communauté des 9 Poilus</span> rassemble nos précieux compagnons dans une aventure quotidienne faite d'amour, de fidélité et de complicité.
+
+          <div className="rounded-2xl border border-poilu-soleil/25 bg-gradient-to-br from-poilu-creme to-white px-6 py-6 md:px-8 md:py-8">
+            <p className="text-center font-body text-lg leading-relaxed text-poilu-roy md:text-xl">
+              Comme la Communauté de l&apos;Anneau réunissait neuf membres,{" "}
+              <strong className="font-semibold">notre tribu des 9 Poilus</strong> partage le même fil : amour,
+              fidélité et petites aventures du quotidien.
             </p>
           </div>
-          <section className="flex flex-col items-center gap-4 mb-8" aria-label="Présentation des 9 poilus">
-            {/* 1 chien */}
-            <div className="flex flex-col items-center mb-2">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-poilu-soleil to-poilu-turquoise flex items-center justify-center shadow-md border-2 border-poilu-roy/20 mb-1">
-                <span className="text-3xl md:text-4xl select-none" role="img" aria-label="chien">🐕‍🦺</span>
+
+          <div className="mt-10 space-y-10" aria-label="Les neuf compagnons">
+            <div className="flex flex-col items-center">
+              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-poilu-soleil to-poilu-turquoise shadow-md ring-2 ring-white">
+                <span className="text-3xl" aria-hidden>
+                  🐕‍🦺
+                </span>
               </div>
-              <span className="text-poilu-roy font-heading text-base md:text-lg mt-1">Mako</span>
+              <span className="mt-2 font-display text-base font-medium text-poilu-roy">Mako</span>
             </div>
-            {/* 6 chats en ligne */}
-            <div className="flex flex-wrap justify-center gap-4 mt-2">
-              {[
-                { nom: 'Hawaï' },
-                { nom: 'Mowgli' },
-                { nom: 'Phuket' },
-                { nom: 'Yellow' },
-                { nom: 'Nyx' },
-                { nom: 'Téthys' },
-              ].map((chat) => (
-                <div key={chat.nom} className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-poilu-soleil to-poilu-turquoise flex items-center justify-center shadow border border-poilu-roy/10">
-                    <span className="text-2xl select-none" role="img" aria-label="chat">🐱</span>
+
+            <div className="flex flex-wrap justify-center gap-4 md:gap-5">
+              {chats.map((chat) => (
+                <div key={chat.nom} className="flex w-[4.5rem] flex-col items-center">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-poilu-turquoise/90 to-poilu-soleil/90 shadow ring-1 ring-poilu-roy/10">
+                    <span className="text-2xl" aria-hidden>
+                      🐱
+                    </span>
                   </div>
-                  <span className="text-poilu-roy font-body text-xs mt-1">{chat.nom}</span>
+                  <span className="mt-1.5 text-center font-body text-xs font-medium text-poilu-roy">{chat.nom}</span>
                 </div>
               ))}
             </div>
-            {/* 2 équidés */}
-            <div className="flex justify-center gap-8 mt-4">
+
+            <div className="flex justify-center gap-10 md:gap-14">
               <div className="flex flex-col items-center">
-                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-poilu-turquoise to-poilu-soleil flex items-center justify-center shadow border border-poilu-roy/10">
-                  <span className="text-3xl select-none" role="img" aria-label="jument">🦄</span>
+                <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-poilu-roy to-poilu-turquoise shadow-md ring-1 ring-white/50">
+                  <span className="text-3xl" aria-hidden>
+                    🦄
+                  </span>
                 </div>
-                <span className="text-poilu-roy font-body text-sm mt-1 text-center">Commed'habitude</span>
+                <span className="mt-2 text-center font-body text-sm text-poilu-roy">Comme d&apos;habitude</span>
               </div>
               <div className="flex flex-col items-center">
-                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-poilu-turquoise to-poilu-soleil flex items-center justify-center shadow border border-poilu-roy/10">
-                  <span className="text-3xl select-none" role="img" aria-label="cheval">🐎</span>
+                <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-poilu-roy to-poilu-turquoise shadow-md ring-1 ring-white/50">
+                  <span className="text-3xl" aria-hidden>
+                    🐎
+                  </span>
                 </div>
-                <span className="text-poilu-roy font-body text-sm mt-1 text-center">Goodvisor du Gelon</span>
+                <span className="mt-2 text-center font-body text-sm text-poilu-roy">GoodVisor du Gelon</span>
               </div>
             </div>
-          </section>
-          {/* Citation Tolkien */}
-          <footer className="mt-8 text-center" aria-label="Citation Tolkien">
-            <blockquote className="text-poilu-roy font-script text-2xl md:text-xl mb-2 italic">"Car dans l'amitié véritable, même les plus petites créatures peuvent accomplir de grandes choses."</blockquote>
-            <div className="text-poilu-roy font-body text-sm">Inspiré par <span className="font-bold text-poilu-soleil">J.R.R. Tolkien</span> <span className="select-none" aria-hidden="true">🧙‍♂️</span></div>
+          </div>
+
+          <footer className="mt-12 border-t border-poilu-roy/10 pt-8 text-center">
+            <blockquote className="font-script text-xl italic text-poilu-terre md:text-2xl">
+              &ldquo;Dans l&apos;amitié véritable, les plus petites créatures peuvent accomplir de grandes
+              choses.&rdquo;
+            </blockquote>
+            <p className="mt-3 font-body text-sm text-poilu-gris">
+              Inspiré par <span className="font-semibold text-poilu-roy">J.R.R. Tolkien</span>
+            </p>
           </footer>
         </div>
       </div>

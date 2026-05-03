@@ -1,106 +1,94 @@
+import { Link } from "react-router-dom";
+
+const cards = [
+  {
+    href: "/nos-animaux",
+    emoji: "🐕",
+    title: "Notre chien",
+    desc: "Mako — terrain idéal pour accessoires promenade, confort senior, comportement.",
+    accent: "from-poilu-soleil/30 to-poilu-turquoise/20",
+    border: "border-poilu-soleil/40",
+  },
+  {
+    href: "/nos-animaux",
+    emoji: "🐱",
+    title: "Nos 6 chats",
+    desc: "Indoor, sortie, sensibilités différentes : gamme complète pour vos tests indoor cats.",
+    accent: "from-poilu-turquoise/25 to-poilu-roy/15",
+    border: "border-poilu-turquoise/35",
+  },
+  {
+    href: "/nos-animaux",
+    emoji: "🐎",
+    title: "Nos équidés",
+    desc: "Dressage, outdoor, émotion à la main — pertinent pour marques équitation & soins.",
+    accent: "from-poilu-roy/25 to-poilu-soleil/15",
+    border: "border-poilu-roy/30",
+  },
+];
 
 export default function AnimauxSection() {
   return (
     <section
-      className="py-20 bg-gradient-to-br from-indigo-800 to-purple-800 text-white"
+      className="relative overflow-hidden bg-gradient-to-br from-[#1e1b4b] via-[#312e81] to-poilu-roy py-20 text-white md:py-28"
       aria-labelledby="section-animaux-title"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <header className="text-center mb-16" tabIndex={-1} aria-labelledby="section-animaux-title">
-          <h2 id="section-animaux-title" className="text-4xl font-cinzel font-bold text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)] mb-4">
-            Nos <span className="font-script text-poilu-soleil drop-shadow-sm">9 Poilus</span>
+      <div className="pointer-events-none absolute inset-0 opacity-30" aria-hidden>
+        <div className="absolute -left-24 top-20 h-96 w-96 rounded-full bg-violet-500/40 blur-3xl" />
+        <div className="absolute -right-20 bottom-10 h-80 w-80 rounded-full bg-poilu-turquoise/30 blur-3xl" />
+      </div>
+
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
+        <header className="mx-auto mb-14 max-w-3xl text-center">
+          <p className="font-body text-sm font-semibold uppercase tracking-wider text-poilu-soleil/90">
+            Pour vos campagnes
+          </p>
+          <h2 id="section-animaux-title" className="mt-3 font-display text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
+            Neuf profils,{" "}
+            <span className="text-poilu-soleil">neuf façons de tester votre produit</span>
           </h2>
-          <p className="text-lg text-white/90 font-body max-w-2xl mx-auto drop-shadow-[0_1px_2px_rgba(0,0,0,0.7)]">
-            Découvrez le quotidien chaleureux et authentique de notre tribu à quatre pattes,
-            entre moments drôles, tendres et parfois chaotiques !
+          <p className="mt-4 font-body text-lg text-white/80">
+            Marques : voici la matière première de nos collaborations — des animaux réels, suivis au quotidien. Idéal pour
+            montrer usage, durabilité et émotion sans studio.
           </p>
         </header>
 
-  <section className="grid grid-cols-1 md:grid-cols-3 gap-8" aria-label="Présentation synthétique des animaux">
-          {/* Carte Chien */}
-          <a href="/nos-animaux/#chiens" className="bg-white/90 md:bg-gradient-to-br md:from-white md:to-poilu-creme p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-poilu-soleil border-opacity-30 group hover:border-opacity-60 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-poilu-soleil/40" aria-label="Découvrir Mako, notre chien">
-            <div className="w-16 h-16 bg-gradient-to-br from-poilu-soleil to-poilu-turquoise rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
-              <span className="text-3xl" role="img" aria-label="chien">🐕</span>
-            </div>
-            <h3 className="text-xl font-heading font-semibold mb-4 text-poilu-turquoise text-center drop-shadow-[0_1px_2px_rgba(255,255,255,0.7)]">Notre Chien</h3>
-            <p className="text-gray-800 font-body text-center leading-relaxed bg-white/80 rounded px-1 py-1 shadow-sm">
-              Mako, le véritable patron de la famille ! Fidèle compagnon et source inépuisable de joie,
-              il fait régner l'ordre dans la troupe.
-            </p>
-            <div className="text-center mt-6" aria-hidden="true">
-              <span className="text-2xl">👑 🐕 ✨</span>
-            </div>
-            <div className="text-center mt-4">
-              <span className="inline-flex items-center text-poilu-roy font-semibold group-hover:text-poilu-turquoise transition-colors duration-300">
-                Découvrir Mako
-                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <div className="grid gap-6 md:grid-cols-3">
+          {cards.map((c) => (
+            <Link
+              key={c.title}
+              to={c.href}
+              className={`group relative overflow-hidden rounded-3xl border bg-gradient-to-br ${c.accent} p-8 shadow-card backdrop-blur-sm transition ${c.border} hover:-translate-y-1 hover:shadow-glow`}
+            >
+              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-white/15 text-3xl ring-1 ring-white/20 backdrop-blur-sm transition group-hover:scale-105">
+                <span aria-hidden>{c.emoji}</span>
+              </div>
+              <h3 className="font-display text-xl font-semibold">{c.title}</h3>
+              <p className="mt-3 font-body leading-relaxed text-white/85">{c.desc}</p>
+              <span className="mt-6 inline-flex items-center font-body text-sm font-semibold text-poilu-soleil">
+                Fiches détaillées
+                <svg className="ml-2 h-4 w-4 transition group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                 </svg>
               </span>
-            </div>
-          </a>
+            </Link>
+          ))}
+        </div>
 
-          {/* Carte Chats */}
-          <a href="/nos-animaux/#chats" className="bg-white/90 md:bg-gradient-to-br md:from-white md:to-poilu-creme p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-poilu-turquoise border-opacity-30 group hover:border-opacity-60 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-poilu-turquoise/40" aria-label="Découvrir nos 6 chats">
-            <div className="w-16 h-16 bg-gradient-to-br from-poilu-turquoise to-poilu-roy rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
-              <span className="text-3xl" role="img" aria-label="chat">🐱</span>
-            </div>
-            <h3 className="text-xl font-heading font-semibold mb-4 text-poilu-turquoise text-center drop-shadow-[0_1px_2px_rgba(255,255,255,0.7)]">Nos 6 Chats</h3>
-            <p className="text-gray-800 font-body text-center leading-relaxed bg-white/80 rounded px-1 py-1 shadow-sm">
-              Maîtres de l'art de vivre, ils nous enseignent la zen attitude !
-              2 mâles et 4 femelles aux personnalités uniques.
-            </p>
-            <div className="text-center mt-6" aria-hidden="true">
-              <span className="text-2xl">😸 😺 🙀</span>
-            </div>
-            <div className="text-center mt-4">
-              <span className="inline-flex items-center text-poilu-roy font-semibold group-hover:text-poilu-turquoise transition-colors duration-300">
-                Découvrir nos chats
-                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                </svg>
-              </span>
-            </div>
-          </a>
-
-          {/* Carte Équidés */}
-          <a href="/nos-animaux/#equides" className="bg-white/90 md:bg-gradient-to-br md:from-white md:to-poilu-creme p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-poilu-roy border-opacity-30 group hover:border-opacity-60 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-poilu-roy/40" aria-label="Découvrir nos équidés">
-            <div className="w-16 h-16 bg-gradient-to-br from-poilu-roy to-poilu-soleil rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
-              <span className="text-3xl" role="img" aria-label="cheval">🐎</span>
-            </div>
-            <h3 className="text-xl font-heading font-semibold mb-4 text-poilu-roy text-center drop-shadow-[0_1px_2px_rgba(255,255,255,0.7)]">Nos Équidés</h3>
-            <p className="text-gray-800 font-body text-center leading-relaxed bg-white/80 rounded px-1 py-1 shadow-sm">
-              Good le cheval et Comme d'habitude la jument, qui nous connectent à la nature
-              et nous rappellent la beauté des relations authentiques.
-            </p>
-            <div className="text-center mt-6" aria-hidden="true">
-              <span className="text-2xl">✨ 🦄 ✨</span>
-            </div>
-            <div className="text-center mt-4">
-              <span className="inline-flex items-center text-poilu-roy font-semibold group-hover:text-poilu-turquoise transition-colors duration-300">
-                Découvrir nos équidés
-                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                </svg>
-              </span>
-            </div>
-          </a>
-        </section>
-
-        {/* Lien vers nos anges gardiens */}
-        <footer className="text-center mt-16" aria-label="Lien vers nos anges gardiens">
-          <div className="max-w-2xl mx-auto">
-            <p className="text-white mb-6 leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.7)]">
-              Notre famille compte aussi <strong>4 anges gardiens</strong> qui veillent sur nous depuis les étoiles...
-            </p>
-            <a href="/nos-anges/" className="inline-flex items-center bg-gradient-to-r from-purple-100 to-blue-100 text-purple-700 px-6 py-3 rounded-2xl font-semibold hover:shadow-lg transition-all duration-300 border border-purple-200 hover:border-purple-300 focus:outline-none focus:ring-4 focus:ring-poilu-soleil/40" aria-label="Se souvenir de nos anges gardiens">
-              <span className="text-lg mr-2" role="img" aria-label="colombe">🕊️</span>
-              Se souvenir de nos anges gardiens
-              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </a>
-          </div>
+        <footer className="mt-16 flex flex-col items-center gap-4 text-center sm:flex-row sm:justify-center sm:gap-6">
+          <Link
+            to="/collaborations"
+            className="inline-flex rounded-2xl bg-poilu-soleil px-6 py-3 font-body font-semibold text-poilu-roy shadow-lg transition hover:bg-poilu-ocre"
+          >
+            Voir notre offre marques
+          </Link>
+          <Link
+            to="/nos-disparus"
+            className="inline-flex items-center gap-2 rounded-2xl border border-white/25 bg-white/10 px-6 py-3 font-body font-medium backdrop-blur-sm transition hover:bg-white/15"
+          >
+            <span aria-hidden>🕊️</span>
+            Nos anges gardiens
+          </Link>
         </footer>
       </div>
     </section>

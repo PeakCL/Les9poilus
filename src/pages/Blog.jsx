@@ -1,18 +1,20 @@
-import React from "react";
+import PageHeader from "../components/PageHeader";
 
 export default function Blog() {
   return (
-    <section className="w-full min-h-screen bg-gradient-to-br from-poilu-roy via-poilu-turquoise to-poilu-soleil pb-10 xs:pb-12 sm:pb-16">
-      <div className="w-full bg-gradient-to-r from-poilu-roy to-poilu-turquoise py-7 xs:py-8 sm:py-10 mb-8 xs:mb-10 sm:mb-12">
-        <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-cinzel-bold text-poilu-soleil text-center drop-shadow-lg tracking-tight">Notre Blog</h1>
-        <p className="text-center text-white font-body text-base xs:text-lg mt-2 xs:mt-3 sm:mt-4">Découvrez nos derniers articles, actualités et réflexions</p>
-      </div>
-      <div className="max-w-3xl mx-auto px-2 xs:px-3 sm:px-4">
-        <div className="bg-white/95 rounded-3xl shadow-xl p-5 xs:p-7 sm:p-10 flex flex-col items-center border border-poilu-roy/10">
-          <h2 className="text-xl xs:text-2xl font-heading text-poilu-roy mb-2 xs:mb-4">Aucun article pour le moment</h2>
-          <p className="text-poilu-gris font-body text-center text-sm xs:text-base leading-relaxed">Les premiers articles seront bientôt publiés. Revenez nous voir !</p>
+    <>
+      <PageHeader eyebrow="Journal" title="Notre blog" subtitle="Articles, réflexions et moments de vie avec la tribu." />
+      <section className="min-h-[40vh] bg-gradient-to-b from-poilu-creme to-white pb-20 pt-12 md:pb-28 md:pt-16">
+        <div className="mx-auto max-w-lg px-4 text-center sm:px-6">
+          <div className="rounded-3xl border border-dashed border-poilu-turquoise/40 bg-white/90 p-10 shadow-card backdrop-blur-sm">
+            <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-poilu-turquoise/15 text-3xl">📖</div>
+            <h2 className="font-display text-2xl font-semibold text-poilu-roy">Premiers articles en préparation</h2>
+            <p className="mt-3 font-body leading-relaxed text-poilu-gris">
+              Patience — nous préparons du contenu avec le même soin que nos gamelles du dimanche.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
