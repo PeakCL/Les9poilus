@@ -9,8 +9,15 @@ import Blog from "./pages/Blog";
 import NosDisparus from "./pages/NosDisparus";
 import NotreHistoire from "./pages/NotreHistoire";
 import Footer from "./components/Footer";
+import useSeo from "./hooks/useSeo";
 
 function Home() {
+  useSeo({
+    title: "Les 9 Poilus | Collaborations marques et créateurs animaliers en Savoie",
+    description:
+      "Les 9 Poilus : collaborations marques petfood et animalerie. UGC authentique et tests produits avec neuf compagnons, chien, chats et chevaux, en Savoie.",
+    path: "/",
+  });
   return <Hero />;
 }
 

@@ -1,6 +1,13 @@
 import PageHeader from "../components/PageHeader";
+import useSeo from "../hooks/useSeo";
 
 export default function Blog() {
+  useSeo({
+    title: "Le blog : la vie avec neuf animaux | Les 9 Poilus",
+    description: "Articles, conseils et moments de vie avec la tribu des 9 Poilus. Les premiers articles sont en preparation.",
+    path: "/blog",
+  });
+
   return (
     <>
       <PageHeader eyebrow="Journal" title="Notre blog" subtitle="Articles, réflexions et moments de vie avec la tribu." />

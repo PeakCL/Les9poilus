@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Dossier tampon de suppression (Claude ne peut pas supprimer, a vider a la main)
+_to_delete/

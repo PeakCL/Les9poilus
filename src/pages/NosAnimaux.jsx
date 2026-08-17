@@ -9,6 +9,7 @@ import nyxImg from "../assets/images/animaux/nyx.webp";
 import yellowImg from "../assets/images/animaux/yellow.webp";
 import goodImg from "../assets/images/animaux/good.webp";
 import commedhabImg from "../assets/images/animaux/commedhab.webp";
+import useSeo from "../hooks/useSeo";
 
 const animaux = [
   {
@@ -95,6 +96,12 @@ const animaux = [
 ];
 
 export default function NosAnimaux() {
+  useSeo({
+    title: "Nos animaux : les 9 poilus, un chien, six chats et deux chevaux | Les 9 Poilus",
+    description: "Mako, Hawai, Mowgli, Phuket, Nyx, Tethys, Yellow, GoodVisor du Gelon et Comme d'habitude : decouvrez les neuf compagnons de la communaute et leur histoire.",
+    path: "/nos-animaux",
+  });
+
   return (
     <>
       <PageHeader

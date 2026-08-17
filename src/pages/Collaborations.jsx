@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
+import useSeo from "../hooks/useSeo";
 
 const stats = [
   {
@@ -44,6 +45,12 @@ const stats = [
 ];
 
 export default function Collaborations() {
+  useSeo({
+    title: "Collaborations marques petfood et animalerie | Les 9 Poilus",
+    description: "UGC, tests produits et storytelling avec neuf animaux reels en Savoie. Formats, plateformes et modalites de collaboration pour les marques animalieres.",
+    path: "/collaborations",
+  });
+
   return (
     <>
       <PageHeader

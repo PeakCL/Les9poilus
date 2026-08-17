@@ -1,0 +1,11 @@
+# Normalise les fins de ligne : LF dans le depot, quelle que soit la machine.
+# Evite les diffs entierement rouges/verts entre Windows et le depot.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
+*.mp4 binary
+*.svg text eol=lf

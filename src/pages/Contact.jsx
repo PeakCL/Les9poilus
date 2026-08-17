@@ -1,6 +1,13 @@
 import PageHeader from "../components/PageHeader";
+import useSeo from "../hooks/useSeo";
 
 export default function Contact() {
+  useSeo({
+    title: "Contact et brief marque | Les 9 Poilus",
+    description: "Marques et agences : envoyez votre brief (produit, objectifs, formats, fenetre de campagne) et retrouvez tous nos reseaux sociaux.",
+    path: "/contact",
+  });
+
   return (
     <>
       <PageHeader

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
+import useSeo from "../hooks/useSeo";
 
 const blocks = [
   {
@@ -27,6 +28,12 @@ const zones = [
 ];
 
 export default function NotreHistoire() {
+  useSeo({
+    title: "Notre histoire : une famille et neuf compagnons en Savoie | Les 9 Poilus",
+    description: "Comment est nee La Communaute des 9 Poilus : nos valeurs, notre quotidien avec neuf animaux et notre zone d'intervention en Savoie.",
+    path: "/notre-histoire",
+  });
+
   return (
     <>
       <PageHeader

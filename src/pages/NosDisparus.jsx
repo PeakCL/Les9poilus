@@ -3,6 +3,7 @@ import pralineImg from "../assets/images/animaux/praline.webp";
 import kimaImg from "../assets/images/animaux/Kima.webp";
 import kiwiImg from "../assets/images/animaux/kiwi.webp";
 import litchiImg from "../assets/images/animaux/Litchi.webp";
+import useSeo from "../hooks/useSeo";
 
 const disparus = [
   {
@@ -32,6 +33,12 @@ const disparus = [
 ];
 
 export default function NosDisparus() {
+  useSeo({
+    title: "Nos anges gardiens : hommage a nos compagnons disparus | Les 9 Poilus",
+    description: "Praline, Kima, Kiwi et Litchi : hommage aux compagnons qui ont fait partie de la communaute et qui nous accompagnent encore.",
+    path: "/nos-disparus",
+  });
+
   return (
     <>
       <PageHeader
