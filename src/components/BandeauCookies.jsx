@@ -44,8 +44,8 @@ export default function BandeauCookies() {
         On compte les visites ?
       </p>
       <p className="mt-1 font-body text-sm leading-relaxed text-poilu-roy/80">
-        Avec votre accord, Google Analytics mesure la fréquentation du site (pages vues, réseau d&apos;où vous venez).
-        Aucune publicité. Vous pouvez changer d&apos;avis via « Gérer les cookies » en bas de page.
+        Avec votre accord, Google Analytics mesure la fréquentation du site (pages vues, réseau d&apos;où vous venez)
+        et notre fil Instagram s&apos;affiche via Elfsight. Aucune publicité. Vous pouvez changer d&apos;avis via « Gérer les cookies » en bas de page.
       </p>
       <div className="mt-4 flex flex-wrap gap-3">
         <button type="button" onClick={() => choisir(accepter)} className="btn-joie bg-poilu-soleil px-5 py-2 text-sm text-poilu-roy">

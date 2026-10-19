@@ -6,6 +6,7 @@
 const GA_ID = import.meta.env.VITE_GA_ID || "G-ZGNMFQ9DSM";
 const CLE_CONSENTEMENT = "poilus-consentement";
 export const EVENEMENT_REOUVRIR = "poilus:gerer-cookies";
+export const EVENEMENT_CONSENTEMENT = "poilus:consentement";
 
 const actif = import.meta.env.PROD && Boolean(GA_ID);
 let charge = false;
@@ -60,12 +61,14 @@ function effacerCookies() {
 export function accepter() {
   enregistrer("accepte");
   charger();
+  window.dispatchEvent(new Event(EVENEMENT_CONSENTEMENT));
 }
 
 export function refuser() {
   enregistrer("refuse");
   if (charge) window[`ga-disable-${GA_ID}`] = true;
   effacerCookies();
+  window.dispatchEvent(new Event(EVENEMENT_CONSENTEMENT));
 }
 
 /** À appeler une fois au démarrage : recharge GA si le visiteur avait déjà accepté. */

@@ -20,17 +20,10 @@ const blocks = [
   },
 ];
 
-const zones = [
-  { city: "Albertville", note: "Et environs" },
-  { city: "Chambéry", note: "Et métropole" },
-  { city: "Bourg-Saint-Maurice", note: "Tarentaise" },
-  { city: "Saint-Jean-de-Maurienne", note: "Maurienne" },
-];
-
 export default function NotreHistoire() {
   useSeo({
     title: "Notre histoire : deux humains et neuf compagnons en Savoie | Les 9 Poilus",
-    description: "Comment est nee La Communaute des 9 Poilus : nos valeurs, notre quotidien avec neuf animaux et notre zone d'intervention en Savoie.",
+    description: "Comment est nee La Communaute des 9 Poilus : nos valeurs et notre quotidien avec neuf animaux, chez nous en Savoie.",
     path: "/notre-histoire",
   });
 
@@ -55,29 +48,6 @@ export default function NotreHistoire() {
                 <p className="mt-4 font-body text-lg leading-relaxed text-poilu-roy">{b.text}</p>
               </article>
             ))}
-          </section>
-
-          <section className="mt-14" aria-labelledby="zones-title">
-            <h2 id="zones-title" className="flex items-center gap-3 font-display text-xl font-semibold text-poilu-roy md:text-2xl">
-              <span className="text-3xl" aria-hidden>
-                🗺️
-              </span>
-              Zone d&apos;intervention en Savoie
-            </h2>
-            <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
-              {zones.map((z) => (
-                <div
-                  key={z.city}
-                  className="rounded-2xl border border-poilu-turquoise/20 bg-white p-4 text-center shadow-sm"
-                >
-                  <p className="font-display font-semibold text-poilu-turquoise">{z.city}</p>
-                  <p className="mt-1 font-body text-xs text-poilu-gris">{z.note}</p>
-                </div>
-              ))}
-            </div>
-            <p className="mt-6 text-center font-body text-sm text-poilu-gris">
-              Intervention possible dans toute la Savoie selon urgences et besoins.
-            </p>
           </section>
 
           <footer className="mt-14 rounded-3xl border border-poilu-roy/10 bg-gradient-to-br from-poilu-roy to-poilu-turquoise/90 p-8 text-center text-white shadow-card md:p-10">

@@ -1,3 +1,5 @@
+import FilInstagram from "./FilInstagram";
+
 const networks = [
   {
     name: "TikTok",
@@ -67,6 +69,8 @@ export default function ReseauxSection() {
             </li>
           ))}
         </ul>
+
+        <FilInstagram />
 
         <ul className="mt-10 flex flex-wrap gap-2 font-body text-sm font-bold">
           {["#Les9Poilus", "#VieAvecAnimaux", "#AmourAnimaux", "#QuotidienPoilus"].map((tag) => (
