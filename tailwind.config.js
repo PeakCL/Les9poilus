@@ -25,9 +25,9 @@ module.exports = {
         energy: "#FF8C69",
       },
       fontFamily: {
-        display: ["\"Bricolage Grotesque\"", "system-ui", "sans-serif"],
-        heading: ["\"Bricolage Grotesque\"", "system-ui", "sans-serif"],
-        body: ["\"Bricolage Grotesque\"", "system-ui", "sans-serif"],
+        display: ["\"Bricolage Grotesque Variable\"", "\"Bricolage Grotesque\"", "system-ui", "sans-serif"],
+        heading: ["\"Bricolage Grotesque Variable\"", "\"Bricolage Grotesque\"", "system-ui", "sans-serif"],
+        body: ["\"Bricolage Grotesque Variable\"", "\"Bricolage Grotesque\"", "system-ui", "sans-serif"],
         script: ["Caveat", "cursive"],
       },
       spacing: {

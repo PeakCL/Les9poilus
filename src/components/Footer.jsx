@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logos/logo.png";
 import peakClLogo from "../assets/logos/PeakCL.svg";
 import { SocialIcons } from "./SocialIcons";
+import { EVENEMENT_REOUVRIR } from "../lib/analytics";
 
 const footerLinks = [
   { label: "Accueil", to: "/" },
@@ -49,6 +50,13 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-white/65">
           <p className="font-body">© {new Date().getFullYear()} La Communauté des 9 Poilus. Tous droits réservés.</p>
+          <button
+            type="button"
+            onClick={() => window.dispatchEvent(new Event(EVENEMENT_REOUVRIR))}
+            className="mt-2 font-body underline underline-offset-4 transition hover:text-poilu-soleil"
+          >
+            Gérer les cookies
+          </button>
           <p className="mt-3 flex flex-wrap items-center justify-center gap-1 font-body">
             <span>Développé avec</span>
             <span className="font-medium text-poilu-soleil">React</span>

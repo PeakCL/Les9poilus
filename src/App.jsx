@@ -9,6 +9,7 @@ import Blog from "./pages/Blog";
 import NosDisparus from "./pages/NosDisparus";
 import NotreHistoire from "./pages/NotreHistoire";
 import Footer from "./components/Footer";
+import BandeauCookies, { SuiviPages } from "./components/BandeauCookies";
 import useSeo from "./hooks/useSeo";
 
 function Home() {
@@ -39,6 +40,8 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <SuiviPages />
+        <BandeauCookies />
       </div>
     </Router>
   );
