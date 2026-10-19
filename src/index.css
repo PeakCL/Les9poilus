@@ -253,3 +253,12 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ---------- Affiche du hero : accrochée de travers, se redresse au survol ---------- */
+.affiche {
+  transform: rotate(3deg);
+  transition: transform 0.45s var(--rebond);
+}
+.affiche:hover {
+  transform: rotate(0deg) scale(1.02);
+}
