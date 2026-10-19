@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
 import useSeo from "../hooks/useSeo";
+import { abonnesCumules, plateformes, portee, releveLe } from "../data/audience";
 
-const stats = [
-  {
-    name: "TikTok",
-    href: "https://www.tiktok.com/@communaute_9_poilus",
-    lines: ["733 abonnés", "Audience engagée", "Croissance régulière"],
+const icones = {
+  TikTok: {
     icon: (
       <svg viewBox="0 0 32 32" className="h-8 w-8 text-white" fill="currentColor" aria-hidden>
         <path d="M21.5 2a1 1 0 0 1 1 1c0 3.6 2.4 6.1 6 6.1a1 1 0 0 1 1 1v4.2a1 1 0 0 1-1 1c-1.2 0-2.4-.2-3.5-.7v7.7c0 5.2-4.2 9.4-9.4 9.4S6.2 27.3 6.2 22.1c0-5.2 4.2-9.4 9.4-9.4.3 0 .6 0 .9.1a1 1 0 0 1 .8 1v4.2a1 1 0 0 1-1 1c-2.4 0-4.3 1.9-4.3 4.3s1.9 4.3 4.3 4.3 4.3-1.9 4.3-4.3V2.9a1 1 0 0 1 1-1h2.2z" />
@@ -14,10 +12,7 @@ const stats = [
     ),
     iconWrap: "bg-black",
   },
-  {
-    name: "Instagram",
-    href: "https://www.instagram.com/la_communaute_des_9_poilus",
-    lines: ["121 abonnés", "Communauté passionnée", "Stories régulières"],
+  Instagram: {
     icon: (
       <svg viewBox="0 0 32 32" className="h-8 w-8 text-white" fill="none" stroke="currentColor" aria-hidden>
         <rect x="6" y="6" width="20" height="20" rx="6" strokeWidth="2" />
@@ -27,10 +22,7 @@ const stats = [
     ),
     iconWrap: "bg-gradient-to-br from-poilu-soleil to-poilu-turquoise",
   },
-  {
-    name: "Facebook",
-    href: "https://www.facebook.com/profile.php?id=61575813491991&sk=about",
-    lines: ["Page active", "Échanges & entraide", "Moments partagés"],
+  Facebook: {
     icon: (
       <svg viewBox="0 0 32 32" className="h-8 w-8 text-white" fill="currentColor" aria-hidden>
         <circle cx="16" cy="16" r="16" fill="#1877F3" />
@@ -42,6 +34,12 @@ const stats = [
     ),
     iconWrap: "bg-[#1877F3]",
   },
+};
+
+const chiffresCles = [
+  { valeur: portee.personnesParPublication, label: "personnes touchées par publication", bg: "bg-poilu-soleil" },
+  { valeur: portee.engagement, label: "d'engagement sur la portée", bg: "bg-poilu-prairie" },
+  { valeur: `jusqu'à ${portee.pic}`, label: "vues sur nos meilleures vidéos", bg: "bg-white" },
 ];
 
 export default function Collaborations() {
@@ -56,40 +54,66 @@ export default function Collaborations() {
       <PageHeader
         eyebrow="Marques & animalerie"
         title="Collaborations & création de contenu"
-        subtitle="UGC, tests produits, storytelling : nous associons votre marque à une famille créatrice avec neuf profils animaux réels — pour des campagnes crédibles et filmables."
+        subtitle="UGC, tests produits, storytelling : nous associons votre marque à deux humains et neuf animaux bien réels — pour des campagnes crédibles et filmables."
       />
       <div className="bg-gradient-to-b from-white via-poilu-creme to-poilu-turquoise/10 pb-20 pt-10 md:pb-28 md:pt-14">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {stats.map((s) => (
-              <a
-                key={s.name}
-                href={s.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group rounded-3xl border border-poilu-roy/10 bg-white/95 p-6 shadow-card transition hover:-translate-y-1 hover:shadow-glow"
-              >
-                <div
-                  className={`mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl ${s.iconWrap} shadow-inner`}
+          <section aria-labelledby="portee-title">
+            <h2 id="portee-title" className="font-display text-3xl font-extrabold text-poilu-roy sm:text-4xl">
+              Ce que touche une publication
+            </h2>
+            <p className="mt-3 max-w-[60ch] font-body text-poilu-roy/80">
+              Une marque qui passe par nous est vue par des gens qui regardent vraiment. On vous montre la portée
+              réelle de chaque publication, pas seulement un nombre d&apos;abonnés.
+            </p>
+            <ul className="mt-8 grid gap-5 sm:grid-cols-3">
+              {chiffresCles.map((c) => (
+                <li key={c.label} className={`sticker rounded-2xl p-6 text-poilu-roy ${c.bg}`}>
+                  <p className="font-display text-3xl font-extrabold leading-tight sm:text-4xl">{c.valeur}</p>
+                  <p className="mt-2 font-body font-semibold">{c.label}</p>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-5 max-w-[80ch] font-body text-sm text-poilu-gris">
+              {portee.note} Les pics viennent de quelques vidéos et ne représentent pas une publication type. Chiffres
+              relevés le {releveLe}.
+            </p>
+          </section>
+
+          <section className="mt-14" aria-labelledby="plateformes-title">
+            <h2 id="plateformes-title" className="font-display text-2xl font-extrabold text-poilu-roy">
+              Qui nous suit, plateforme par plateforme
+            </h2>
+            <p className="mt-2 font-body text-poilu-roy/80">{abonnesCumules} abonnés au total sur les trois réseaux.</p>
+            <div className="mt-8 grid gap-5 md:grid-cols-3">
+              {plateformes.map((p) => (
+                <a
+                  key={p.nom}
+                  href={p.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group rounded-3xl border-[2.5px] border-poilu-roy bg-white p-6 shadow-card transition hover:-translate-y-1 hover:shadow-glow"
                 >
-                  {s.icon}
-                </div>
-                <h2 className="font-display text-lg font-semibold text-poilu-roy">{s.name}</h2>
-                <ul className="mt-3 space-y-1 font-body text-sm text-poilu-gris">
-                  {s.lines.map((line) => (
-                    <li key={line}>{line}</li>
-                  ))}
-                </ul>
-              </a>
-            ))}
-            <div className="rounded-3xl border border-poilu-roy/10 bg-gradient-to-br from-poilu-turquoise/15 to-poilu-soleil/15 p-6 shadow-card">
-              <span className="text-4xl" aria-hidden>
-                🐾
-              </span>
-              <h2 className="mt-3 font-display text-lg font-semibold text-poilu-roy">Testeurs</h2>
-              <p className="mt-2 font-body text-sm text-poilu-gris">9 compagnons · avis sincères · vie réelle</p>
+                  <div className="flex items-center gap-3">
+                    <span className={`inline-flex h-12 w-12 items-center justify-center rounded-xl ${icones[p.nom].iconWrap}`}>
+                      {icones[p.nom].icon}
+                    </span>
+                    <div>
+                      <h3 className="font-display text-lg font-extrabold text-poilu-roy">{p.nom}</h3>
+                      <p className="font-body text-sm text-poilu-gris">{p.abonnes} abonnés</p>
+                    </div>
+                  </div>
+                  <p className="mt-5 font-display text-3xl font-extrabold text-poilu-roy">{p.chiffre.valeur}</p>
+                  <p className="font-body text-sm font-semibold text-poilu-roy">{p.chiffre.label}</p>
+                  <ul className="mt-4 space-y-1 border-t-2 border-dashed border-poilu-roy/20 pt-4 font-body text-sm text-poilu-gris">
+                    {p.audience.map((ligne) => (
+                      <li key={ligne}>{ligne}</li>
+                    ))}
+                  </ul>
+                </a>
+              ))}
             </div>
-          </div>
+          </section>
 
           <section className="mt-14">
             <h2 className="font-display text-2xl font-semibold text-poilu-roy">Ce que nous aimerions créer ensemble</h2>

@@ -1,97 +1,106 @@
 import { Link } from "react-router-dom";
-import img9Poilus from "../assets/images/9-poilus.png";
+import Parade from "./Parade";
 import TolkienSection from "./TolkienSection";
 import CollaborationsSection from "./CollaborationsSection";
 import AnimauxSection from "./AnimauxSection";
 import BlogSection from "./BlogSection";
 import ReseauxSection from "./ReseauxSection";
 
+const lignes = ["Neuf poilus,", "deux humains,", "zéro jour pareil."];
+
+/** Découpe le titre en lettres animées, mots insécables, invisible pour les lecteurs d'écran. */
+function TitreRebond() {
+  let i = 0;
+  return (
+    <span aria-hidden>
+      {lignes.map((ligne) => (
+        <span key={ligne} className="block">
+          {ligne.split(" ").map((mot, m) => (
+            <span key={m} className="inline-block whitespace-nowrap">
+              {[...mot].map((c, k) => (
+                <span key={k} className="lettre" style={{ "--i": i++ }}>
+                  {c}
+                </span>
+              ))}
+              {m < ligne.split(" ").length - 1 && " "}
+            </span>
+          ))}
+        </span>
+      ))}
+    </span>
+  );
+}
+
+function Soleil() {
+  return (
+    <svg
+      viewBox="0 0 120 120"
+      className="pointer-events-auto absolute right-3 top-3 h-16 w-16 transition-transform duration-[1.2s] ease-out hover:rotate-180 sm:right-10 sm:top-10 sm:h-36 sm:w-36"
+      aria-hidden
+    >
+      <g stroke="#1B2470" strokeWidth="4" strokeLinecap="round">
+        {Array.from({ length: 12 }, (_, k) => (
+          <line key={k} x1="60" y1="8" x2="60" y2="22" transform={`rotate(${k * 30} 60 60)`} />
+        ))}
+      </g>
+      <circle cx="60" cy="60" r="28" fill="#FFC93C" stroke="#1B2470" strokeWidth="4" />
+      <path d="M48 62 q12 12 24 0" fill="none" stroke="#1B2470" strokeWidth="4" strokeLinecap="round" />
+      <circle cx="50" cy="53" r="3.5" fill="#1B2470" />
+      <circle cx="70" cy="53" r="3.5" fill="#1B2470" />
+    </svg>
+  );
+}
+
 export default function Hero() {
   return (
     <>
-      <section
-        className="relative overflow-hidden bg-poilu-roy text-white"
-        role="banner"
-        aria-labelledby="hero-title"
-      >
-        <div className="absolute inset-0 bg-mesh-hero" aria-hidden />
-        <div className="pointer-events-none absolute -left-20 top-20 h-72 w-72 rounded-full bg-poilu-turquoise/25 blur-3xl" aria-hidden />
-        <div className="pointer-events-none absolute -right-16 bottom-10 h-80 w-80 rounded-full bg-poilu-soleil/20 blur-3xl" aria-hidden />
+      <section className="relative overflow-hidden bg-poilu-ciel text-poilu-roy" aria-labelledby="hero-title">
+        <Soleil />
 
-        <div className="relative mx-auto flex max-w-7xl flex-col items-center px-4 pb-20 pt-16 sm:px-6 lg:flex-row lg:items-center lg:gap-12 lg:pb-24 lg:pt-20">
-          <div className="max-w-xl text-center lg:flex-1 lg:text-left">
-            <p className="inline-flex rounded-full border border-poilu-soleil/40 bg-poilu-soleil/15 px-4 py-1.5 font-body text-xs font-semibold uppercase tracking-wider text-poilu-soleil">
-              Partenariats marques · bien-être animal
+        <div className="relative mx-auto max-w-6xl px-4 pt-14 sm:px-6 sm:pt-20">
+          <h1
+            id="hero-title"
+            aria-label="Neuf poilus, deux humains, zéro jour pareil."
+            className="font-large max-w-[14ch] text-[clamp(2.9rem,9.5vw,7.25rem)] font-extrabold leading-[0.92]"
+          >
+            <TitreRebond />
+          </h1>
+
+          <div className="mt-8 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <p className="max-w-[46ch] font-body text-lg leading-relaxed text-poilu-roy/85 sm:text-xl">
+              Deux humains en Savoie et toute une ménagerie : un chien, six chats, deux chevaux. On partage les balades, les siestes, les bêtises
+              et les grandes histoires de sauvetage de la tribu.
             </p>
-            <h1 id="hero-title" className="mt-5 font-display text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
-              Contenu authentique pour{" "}
-              <span className="bg-gradient-to-r from-poilu-soleil to-poilu-turquoise bg-clip-text text-transparent">
-                votre marque
-              </span>
-            </h1>
-            <p className="mt-6 font-body text-lg leading-relaxed text-white/85 sm:text-xl">
-              Nous sommes une famille créatrice en Savoie avec{" "}
-              <strong className="font-semibold text-white">9 compagnons testeurs</strong> (chien, chats, équidés) et une
-              audience sensible au monde animal.{" "}
-              <strong className="font-semibold text-white">Tests produits, UGC, avis honnêtes</strong> — le tout avec le
-              ton vrai du quotidien.
-            </p>
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
-              <Link
-                to="/collaborations"
-                className="inline-flex items-center justify-center rounded-2xl bg-poilu-soleil px-6 py-3.5 font-body text-base font-semibold text-poilu-roy shadow-lg shadow-poilu-roy/20 transition hover:-translate-y-0.5 hover:bg-poilu-ocre focus-visible:ring-2 focus-visible:ring-poilu-soleil focus-visible:ring-offset-2 focus-visible:ring-offset-poilu-roy"
-              >
-                Dossier marques & offres
+            <div className="flex flex-wrap gap-3">
+              <Link to="/nos-animaux" className="btn-joie bg-poilu-soleil text-poilu-roy">
+                Rencontrer la tribu
               </Link>
-              <Link
-                to="/contact"
-                className="inline-flex items-center justify-center rounded-2xl border border-white/25 bg-white/10 px-6 py-3.5 font-body text-base font-semibold text-white backdrop-blur-sm transition hover:bg-white/15"
-              >
-                Envoyer un brief
-              </Link>
-              <Link
-                to="/nos-animaux"
-                className="inline-flex items-center justify-center rounded-2xl px-4 py-3 font-body text-sm font-medium text-white/80 underline-offset-4 transition hover:text-white hover:underline"
-              >
-                Voir les 9 testeurs
+              <Link to="/collaborations" className="btn-joie bg-white text-poilu-roy">
+                Travailler avec nous
               </Link>
             </div>
-            <dl className="mt-10 grid grid-cols-3 gap-4 border-t border-white/15 pt-8 text-center sm:gap-6 lg:text-left">
-              <div>
-                <dt className="font-body text-xs uppercase tracking-wider text-white/55">Testeurs</dt>
-                <dd className="mt-1 font-display text-lg font-semibold text-poilu-soleil">9 profils</dd>
-              </div>
-              <div>
-                <dt className="font-body text-xs uppercase tracking-wider text-white/55">Formats</dt>
-                <dd className="mt-1 font-display text-lg font-semibold text-poilu-turquoise">UGC & avis</dd>
-              </div>
-              <div>
-                <dt className="font-body text-xs uppercase tracking-wider text-white/55">Valeurs</dt>
-                <dd className="mt-1 font-display text-lg font-semibold text-white/95">Transparence</dd>
-              </div>
-            </dl>
           </div>
 
-          <div className="relative mt-14 w-full max-w-lg lg:mt-0 lg:flex-1">
-            <p className="mb-3 text-center font-body text-xs text-white/60 lg:text-right">
-              Aperçu de la tribu — votre futur terrain de test et de contenu.
-            </p>
-            <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-poilu-turquoise/40 via-transparent to-poilu-soleil/35 blur-2xl" aria-hidden />
-            <div className="relative overflow-hidden rounded-[1.75rem] border border-white/20 bg-white/10 p-2 shadow-card backdrop-blur-md">
-              <img
-                src={img9Poilus}
-                alt="Les 9 Poilus — famille et animaux, créateurs de contenu pour marques du secteur animalier"
-                className="w-full rounded-2xl object-contain"
-                style={{ background: "linear-gradient(180deg, #fffbe8 0%, #fff 100%)" }}
-              />
-            </div>
-          </div>
+          <p className="mt-8 flex items-center gap-2 font-script text-2xl text-poilu-turquoise sm:justify-center" aria-hidden>
+            Clique sur un poilu pour lui dire bonjour
+            <svg viewBox="0 0 40 30" className="h-7 w-9" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+              <path d="M4 4 C 18 4, 30 10, 32 24" />
+              <path d="M25 19 L32 25 L36 17" />
+            </svg>
+          </p>
+
+          <Parade />
         </div>
+
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" className="-mt-3 block h-16 w-full sm:h-24" aria-hidden>
+          <path d="M0 40 C 240 0, 480 70, 720 36 S 1200 0, 1440 44 V120 H0 Z" fill="#2BC48A" stroke="#1B2470" strokeWidth="3" />
+          <path d="M0 78 C 300 48, 560 104, 860 72 S 1300 60, 1440 84 V120 H0 Z" fill="#1FA874" />
+        </svg>
       </section>
 
-      <CollaborationsSection />
       <AnimauxSection />
       <TolkienSection />
+      <CollaborationsSection />
       <BlogSection />
       <ReseauxSection />
     </>

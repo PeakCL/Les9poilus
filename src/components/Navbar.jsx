@@ -16,11 +16,11 @@ const navLinks = [
 ];
 
 const linkClass =
-  "rounded-lg px-3 py-2 text-sm font-medium text-white/90 transition hover:bg-white/10 hover:text-poilu-soleil md:text-[15px]";
-const activeLinkClass = "bg-white/15 text-poilu-soleil";
+  "rounded-full px-3 py-1.5 text-sm font-semibold text-poilu-roy transition hover:-rotate-2 hover:bg-poilu-soleil/50 md:text-[15px]";
+const activeLinkClass = "bg-poilu-soleil";
 const emphasisClass =
-  "rounded-lg px-3 py-2 text-sm font-semibold text-poilu-soleil ring-1 ring-poilu-soleil/50 transition hover:bg-poilu-soleil/15 md:text-[15px]";
-const emphasisActiveClass = "bg-poilu-soleil/25 text-poilu-soleil ring-poilu-soleil";
+  "rounded-full px-3 py-1.5 text-sm font-semibold text-poilu-roy ring-2 ring-poilu-roy transition hover:-rotate-2 hover:bg-poilu-bonbon/40 md:text-[15px]";
+const emphasisActiveClass = "bg-poilu-bonbon";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,22 +29,22 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50">
       <div
-        className="h-0.5 origin-left bg-gradient-to-r from-poilu-soleil via-poilu-turquoise to-poilu-soleil"
+        className="h-1 origin-left bg-poilu-bonbon"
         style={{ transform: `scaleX(${scrollP})` }}
         aria-hidden
       />
       <nav
-        className="border-b border-white/10 bg-poilu-roy/85 backdrop-blur-xl backdrop-saturate-150"
+        className="border-b-[3px] border-poilu-roy bg-white/90 backdrop-blur-md"
         aria-label="Navigation principale"
       >
         <div className="mx-auto flex h-[4.25rem] max-w-7xl items-center justify-between gap-2 px-3 sm:h-[4.5rem] sm:gap-3 sm:px-6">
-          <Link to="/" className="group flex min-w-0 shrink items-center gap-2 sm:gap-3">
+          <Link to="/" className="wiggle-hover group flex min-w-0 shrink items-center gap-2 sm:gap-3">
             <img
               src={logo}
               alt="Les 9 Poilus"
-              className="h-10 w-auto shrink-0 rounded-xl border border-white/20 bg-white/95 p-0.5 shadow-md transition group-hover:border-poilu-soleil/50 sm:h-12"
+              className="wiggle-cible h-10 w-auto shrink-0 rounded-xl border-2 border-poilu-roy bg-white p-0.5 sm:h-12"
             />
-            <span className="hidden font-display text-base font-semibold tracking-tight text-white drop-shadow-sm xs:inline sm:text-xl">
+            <span className="hidden font-display text-base font-extrabold tracking-tight text-poilu-roy xs:inline sm:text-xl">
               Les 9 Poilus
             </span>
           </Link>
@@ -70,24 +70,24 @@ export default function Navbar() {
             </ul>
             <Link
               to="/contact"
-              className="ml-2 hidden shrink-0 rounded-full bg-poilu-soleil px-4 py-2 text-sm font-semibold text-poilu-roy shadow-md transition hover:bg-poilu-ocre lg:inline-flex"
+              className="btn-joie ml-2 hidden shrink-0 bg-poilu-soleil px-4 py-1.5 text-sm text-poilu-roy lg:inline-flex"
             >
               Brief marque
             </Link>
-            <SocialIcons className="ml-1 border-l border-white/15 pl-3 lg:ml-2 lg:pl-4" size={20} idPrefix="nav-desk" />
+            <SocialIcons className="ml-1 border-l-2 border-poilu-roy/15 pl-3 lg:ml-2 lg:pl-4" size={20} idPrefix="nav-desk" />
           </div>
 
           <div className="flex items-center gap-1.5 md:hidden">
             <Link
               to="/collaborations"
-              className="rounded-full bg-poilu-soleil px-3 py-1.5 text-xs font-bold text-poilu-roy shadow-sm"
+              className="rounded-full border-2 border-poilu-roy bg-poilu-soleil px-3 py-1 text-xs font-bold text-poilu-roy"
             >
               Marques
             </Link>
             <SocialIcons size={18} idPrefix="nav-mob-top" />
             <button
               type="button"
-              className="inline-flex rounded-xl p-2.5 text-white transition hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-poilu-soleil"
+              className="inline-flex rounded-xl p-2.5 text-poilu-roy transition hover:bg-poilu-soleil/50"
               aria-expanded={menuOpen}
               aria-controls="mobile-menu"
               aria-label={menuOpen ? "Fermer le menu" : "Ouvrir le menu"}
@@ -105,34 +105,34 @@ export default function Navbar() {
 
         <div
           id="mobile-menu"
-          className={`border-t border-white/10 bg-poilu-roy/98 backdrop-blur-lg md:hidden ${menuOpen ? "block" : "hidden"}`}
+          className={`border-t-2 border-poilu-roy/15 bg-white md:hidden ${menuOpen ? "block" : "hidden"}`}
         >
           <ul className="flex flex-col px-4 py-3">
-            {navLinks.map((link) => (
-              <li key={link.href}>
+            {navLinks.map((link, i) => (
+              <li key={link.href} className="menu-item" style={{ "--i": i }}>
                 <NavLink
                   to={link.href}
                   end={link.href === "/"}
                   onClick={() => setMenuOpen(false)}
                   className={({ isActive }) => {
-                    const base = "block rounded-xl px-4 py-3 text-center text-base font-medium";
+                    const base = "block rounded-full px-4 py-3 text-center text-base font-bold text-poilu-roy";
                     if (link.emphasis) {
-                      return `${base} ${isActive ? "bg-poilu-soleil/25 text-poilu-soleil ring-1 ring-poilu-soleil" : "text-poilu-soleil ring-1 ring-poilu-soleil/40"}`;
+                      return `${base} ring-2 ring-poilu-roy ${isActive ? "bg-poilu-bonbon" : ""}`;
                     }
-                    return `${base} ${isActive ? "bg-white/15 text-poilu-soleil" : "text-white/95"}`;
+                    return `${base} ${isActive ? "bg-poilu-soleil" : ""}`;
                   }}
                 >
                   {link.name}
                 </NavLink>
               </li>
             ))}
-            <li className="px-2 pt-2">
+            <li className="menu-item px-2 pt-2" style={{ "--i": navLinks.length }}>
               <Link
                 to="/contact"
                 onClick={() => setMenuOpen(false)}
-                className="block rounded-xl bg-poilu-soleil py-3 text-center text-base font-bold text-poilu-roy"
+                className="btn-joie w-full bg-poilu-soleil text-poilu-roy"
               >
-                Brief marque — contact
+                Envoyer un brief marque
               </Link>
             </li>
           </ul>

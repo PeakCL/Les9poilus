@@ -15,23 +15,16 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden border-t border-poilu-soleil/25 bg-gradient-to-br from-[#0f172a] via-poilu-roy to-[#0c1222] text-white">
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.07]"
-        aria-hidden
-        style={{
-          backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
-        }}
-      />
+    <footer className="relative border-t-[3px] border-poilu-roy bg-poilu-roy text-white">
       <div className="relative mx-auto max-w-6xl px-4 py-14 sm:px-6">
         <div className="flex flex-col items-center gap-10 md:flex-row md:items-start md:justify-between">
           <div className="flex max-w-sm flex-col items-center text-center md:items-start md:text-left">
             <img
               src={logo}
               alt="Logo Les 9 Poilus"
-              className="mb-4 h-20 w-auto rounded-2xl border border-white/15 bg-white/95 p-1 shadow-lg"
+              className="mb-4 h-20 w-auto -rotate-3 rounded-2xl border-[3px] border-poilu-soleil bg-white p-1"
             />
-            <p className="font-display text-xl font-semibold tracking-tight">La Communauté des 9 Poilus</p>
+            <p className="font-display text-2xl font-extrabold tracking-tight">La Communauté des 9 Poilus</p>
             <p className="mt-2 font-body text-sm text-white/75">
               Créateurs pour marques du monde animal : tests produits, UGC et storytelling authentique avec 9 compagnons en
               Savoie.
@@ -46,7 +39,7 @@ export default function Footer() {
               <Link
                 key={to}
                 to={to}
-                className="font-body text-sm font-medium text-white/85 transition hover:text-poilu-soleil"
+                className="font-body text-sm font-medium text-white/85 underline-offset-4 transition hover:text-poilu-soleil hover:underline"
               >
                 {label}
               </Link>
@@ -60,7 +53,7 @@ export default function Footer() {
             <span>Développé avec</span>
             <span className="font-medium text-poilu-soleil">React</span>
             <span>&</span>
-            <span className="font-medium text-poilu-turquoise">Tailwind CSS</span>
+            <span className="font-medium text-poilu-bonbon">Tailwind CSS</span>
             <span>par</span>
             <a
               href="https://www.peakcl.com/"

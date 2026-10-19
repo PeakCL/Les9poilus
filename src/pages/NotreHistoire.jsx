@@ -29,7 +29,7 @@ const zones = [
 
 export default function NotreHistoire() {
   useSeo({
-    title: "Notre histoire : une famille et neuf compagnons en Savoie | Les 9 Poilus",
+    title: "Notre histoire : deux humains et neuf compagnons en Savoie | Les 9 Poilus",
     description: "Comment est nee La Communaute des 9 Poilus : nos valeurs, notre quotidien avec neuf animaux et notre zone d'intervention en Savoie.",
     path: "/notre-histoire",
   });
@@ -39,7 +39,7 @@ export default function NotreHistoire() {
       <PageHeader
         eyebrow="Savoie"
         title="Notre histoire"
-        subtitle="Une famille, une tribu à quatre pattes, et le désir de tout partager avec bienveillance."
+        subtitle="Deux humains, une tribu à poils et plumes, et l'envie de tout partager avec bienveillance."
       />
       <div className="bg-gradient-to-b from-white via-poilu-creme to-poilu-turquoise/10 pb-20 pt-12 md:pb-28 md:pt-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6">

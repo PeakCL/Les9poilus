@@ -39,47 +39,42 @@ const networks = [
 
 export default function ReseauxSection() {
   return (
-    <section className="bg-gradient-to-br from-poilu-turquoise/90 via-poilu-roy to-poilu-roy py-16 text-white md:py-24" aria-labelledby="reseaux-title">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <header className="mb-12 text-center md:mb-16">
-          <h2 id="reseaux-title" className="font-display text-3xl font-semibold sm:text-4xl">
-            Là où la marque devient <span className="text-poilu-soleil">vivante</span>
+    <section className="border-t-[3px] border-poilu-roy bg-poilu-bonbon py-20 text-poilu-roy md:py-24" aria-labelledby="reseaux-title">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6">
+        <header className="max-w-2xl">
+          <h2 id="reseaux-title" className="font-large text-4xl font-extrabold leading-none sm:text-6xl">
+            Suivez la tribu au quotidien
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl rounded-2xl border border-white/15 bg-white/10 px-4 py-3 font-body text-white/90 backdrop-blur-sm">
-            C&apos;est le terrain naturel de nos partenariats : du vrai, du filable, partageable — idéal pour montrer
-            produit + émotion sans pub lisse.
+          <p className="mt-4 font-body text-lg font-medium">
+            Bêtises, câlins, balades et coulisses : tout se passe d&apos;abord sur nos réseaux.
           </p>
         </header>
 
-        <div className="grid gap-6 md:grid-cols-3">
+        <ul className="mt-12 grid gap-5 md:grid-cols-3">
           {networks.map((n) => (
-            <article
-              key={n.name}
-              className="flex flex-col rounded-3xl border border-white/15 bg-white/[0.08] p-6 shadow-card backdrop-blur-md md:p-8"
-            >
-              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10">{n.icon}</div>
-              <h3 className="font-display text-lg font-semibold">{n.name}</h3>
-              <p className="mt-1 font-mono text-sm text-poilu-soleil/95">{n.handle}</p>
-              <p className="mt-4 flex-1 font-body text-sm leading-relaxed text-white/85">{n.desc}</p>
+            <li key={n.name}>
               <a
                 href={n.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`mt-6 inline-flex w-full items-center justify-center rounded-2xl px-4 py-3.5 text-center font-body text-sm font-semibold text-white transition ${n.buttonClass}`}
+                className="wiggle-hover btn-joie group h-full w-full flex-col items-start justify-start rounded-2xl bg-white p-6 text-left"
               >
-                Voir le profil
+                <span className={`wiggle-cible flex h-14 w-14 items-center justify-center rounded-2xl ${n.buttonClass}`}>{n.icon}</span>
+                <span className="mt-3 text-2xl font-extrabold">{n.name}</span>
+                <span className="break-all font-body text-sm font-semibold text-poilu-turquoise">{n.handle}</span>
+                <span className="mt-2 font-body text-sm font-normal leading-relaxed">{n.desc}</span>
               </a>
-            </article>
+            </li>
           ))}
-        </div>
+        </ul>
 
-        <footer className="mt-12 flex flex-wrap justify-center gap-2 text-sm">
+        <ul className="mt-10 flex flex-wrap gap-2 font-body text-sm font-bold">
           {["#Les9Poilus", "#VieAvecAnimaux", "#AmourAnimaux", "#QuotidienPoilus"].map((tag) => (
-            <span key={tag} className="rounded-full border border-white/20 bg-white/10 px-4 py-1.5 font-body text-white/90">
+            <li key={tag} className="rounded-full border-2 border-poilu-roy bg-white/60 px-4 py-1.5">
               {tag}
-            </span>
+            </li>
           ))}
-        </footer>
+        </ul>
       </div>
     </section>
   );

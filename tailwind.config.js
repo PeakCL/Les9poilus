@@ -5,14 +5,15 @@ module.exports = {
     extend: {
       colors: {
         poilu: {
-          soleil: "#F4D03F",
-          turquoise: "#48CAE4",
-          roy: "#1E3A8A",
+          soleil: "#FFC93C",
+          turquoise: "#E23D7A",
+          roy: "#1B2470",
+          bonbon: "#FF6FA3",
+          prairie: "#2BC48A",
+          ciel: "#E8F4FF",
           terre: "#8B4513",
-          ocre: "#F7DC6F",
-          prairie: "#52D1DC",
-          ciel: "#AED6F1",
-          creme: "#FFFBF0",
+          ocre: "#FFB800",
+          creme: "#F3F9FF",
           sunset: "#FF8C69",
           gris: "#566573",
         },
@@ -24,9 +25,9 @@ module.exports = {
         energy: "#FF8C69",
       },
       fontFamily: {
-        display: ["Fraunces", "Georgia", "serif"],
-        heading: ["Fraunces", "Georgia", "serif"],
-        body: ["Outfit", "system-ui", "sans-serif"],
+        display: ["\"Bricolage Grotesque\"", "system-ui", "sans-serif"],
+        heading: ["\"Bricolage Grotesque\"", "system-ui", "sans-serif"],
+        body: ["\"Bricolage Grotesque\"", "system-ui", "sans-serif"],
         script: ["Caveat", "cursive"],
       },
       spacing: {
@@ -40,8 +41,10 @@ module.exports = {
       boxShadow: {
         warm: "0 4px 14px 0 rgba(139, 69, 19, 0.15)",
         soft: "0 2px 8px 0 rgba(135, 206, 235, 0.2)",
-        glow: "0 0 60px -12px rgba(72, 202, 228, 0.45)",
-        card: "0 8px 40px -12px rgba(30, 58, 138, 0.18)",
+        glow: "6px 6px 0 0 #FF6FA3",
+        card: "4px 4px 0 0 #1B2470",
+        sticker: "5px 5px 0 0 #1B2470",
+        "sticker-pink": "6px 6px 0 0 #FF6FA3",
       },
       backgroundImage: {
         "mesh-hero":

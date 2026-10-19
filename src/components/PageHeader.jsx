@@ -1,32 +1,24 @@
 /**
- * En-tête de page intérieure — bandeau glass + titre.
+ * En-tête de page intérieure — ciel, titre géant et trait qui se dessine.
  */
 export default function PageHeader({ eyebrow, title, subtitle, className = "" }) {
   return (
-    <header
-      className={`relative overflow-hidden border-b border-white/10 bg-poilu-roy/95 py-12 md:py-16 ${className}`}
-    >
-      <div
-        className="pointer-events-none absolute inset-0 opacity-40"
-        aria-hidden
-        style={{
-          background:
-            "radial-gradient(ellipse 80% 60% at 20% 40%, rgba(72, 202, 228, 0.35), transparent 55%), radial-gradient(ellipse 70% 50% at 80% 60%, rgba(244, 208, 63, 0.25), transparent 50%)",
-        }}
-      />
-      <div className="relative mx-auto max-w-5xl px-4 text-center sm:px-6">
-        {eyebrow ? (
-          <p className="mb-3 font-display text-sm font-medium uppercase tracking-[0.2em] text-poilu-soleil/90 md:text-base">
-            {eyebrow}
-          </p>
-        ) : null}
-        <h1 className="font-display text-3xl font-semibold tracking-tight text-white drop-shadow-sm sm:text-4xl md:text-5xl lg:text-6xl">
+    <header className={`relative bg-poilu-ciel pt-12 text-poilu-roy md:pt-16 ${className}`}>
+      <div className="relative mx-auto max-w-5xl px-4 pb-14 sm:px-6 md:pb-20">
+        {eyebrow ? <p className="mb-2 font-script text-2xl text-poilu-turquoise md:text-3xl">{eyebrow}</p> : null}
+        <h1 className="font-large inline-block text-5xl font-extrabold leading-[0.95] sm:text-6xl md:text-7xl">
           {title}
+          <svg viewBox="0 0 300 20" preserveAspectRatio="none" className="trait-dessine mt-2 block h-4 w-full" aria-hidden>
+            <path d="M3 12 C 60 2, 110 18, 160 9 S 260 4, 297 12" fill="none" stroke="#FF6FA3" strokeWidth="6" strokeLinecap="round" />
+          </svg>
         </h1>
         {subtitle ? (
-          <p className="mx-auto mt-4 max-w-2xl font-body text-base text-white/85 md:text-lg">{subtitle}</p>
+          <p className="mt-5 max-w-[56ch] font-body text-lg leading-relaxed text-poilu-roy/85 md:text-xl">{subtitle}</p>
         ) : null}
       </div>
+      <svg viewBox="0 0 1440 40" preserveAspectRatio="none" className="block h-6 w-full md:h-10" aria-hidden>
+        <path d="M0 40 V20 C 240 0, 480 36, 720 18 S 1200 0, 1440 22 V40 Z" fill="#F3F9FF" stroke="#1B2470" strokeWidth="3" />
+      </svg>
     </header>
   );
 }
